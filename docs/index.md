@@ -45,11 +45,11 @@ If you are interested in our products, please contact to our sales representativ
 
 # STEM Programming DIY Crocodile Learning Kit
 
-![](./media/be53afd9ed35da518ffc30ed31c48f51.jpg)
+![](./media/z1.jpg)
 
 ## 1.Mind Mapping
 
-![11](./media/a1adbd95cf9007f64ed3415d2909d8b1.png)
+![11](./media/11.png)
 
 ------
 
@@ -57,20 +57,20 @@ If you are interested in our products, please contact to our sales representativ
 
 |  #   |                           Picture                            |         Component         | QTY  |
 | :--: | :----------------------------------------------------------: | :-----------------------: | :--: |
-|  1   |                    ![img](./media/1d0a15c9ad806574cd9c737b32251d5d.png)                    |      Basswood Board       |  1   |
-|  2   |                   ![img](./media/68083a3dd13c9da663f3984bcd7e21b5.jpg)                   |      Expansion Board      |  1   |
-|  3   |                   ![img](./media/19a01dfebfead136fb0b3f01575cf2b3.jpg)                   |           Servo           |  1   |
-|  4   |                   ![img](./media/b0830dd2166ef1b861a257a6ea0c4075.jpg)                   |      Battery Holder       |  1   |
-|  5   |       ![img](./media/1148384f9fdfb4fc9e08607fe17cf8c5.jpg)![img](./media/1148384f9fdfb4fc9e08607fe17cf8c5.jpg)       |          M4 Nut           |  4   |
-|  6   | ![img](./media/68c4089cc8eb636009b1ab94595345a8.jpg)![img](./media/68c4089cc8eb636009b1ab94595345a8.jpg)![img](./media/68c4089cc8eb636009b1ab94595345a8.jpg)![img](./media/68c4089cc8eb636009b1ab94595345a8.jpg) |       M4*6mm Screw        |  4   |
-|  7   |       ![img](./media/483ee71dcd0c2800784396b79cad1272.jpg)![img](./media/483ee71dcd0c2800784396b79cad1272.jpg)       | M2.5*8MM Flat Head Screw  |  2   |
-|  8   |       ![img](./media/d206c3d6a4b1eb8fda753f3a1f956d10.jpg)![img](./media/d206c3d6a4b1eb8fda753f3a1f956d10.jpg)       |         M2.5 Nut          |  2   |
-|  9   |       ![img](./media/c812e6f9e75cc1b04cf1857a8295297f.jpg)![img](./media/c812e6f9e75cc1b04cf1857a8295297f.jpg)![img](./media/c812e6f9e75cc1b04cf1857a8295297f.jpg)![img](./media/c812e6f9e75cc1b04cf1857a8295297f.jpg)       | M1.4*8MM Round Head Screw |  4  |
-|   10   | ![img](./media/d206c3d6a4b1eb8fda753f3a1f956d10.jpg)![img](./media/d206c3d6a4b1eb8fda753f3a1f956d10.jpg)![img](./media/d206c3d6a4b1eb8fda753f3a1f956d10.jpg)![img](./media/d206c3d6a4b1eb8fda753f3a1f956d10.jpg) |               M1.4  Nut               |   4    |
-|    11  | ![img](./media/316099a051c39707aaf66c9b34c78a51.jpg)![img](./media/316099a051c39707aaf66c9b34c78a51.jpg)![img](./media/316099a051c39707aaf66c9b34c78a51.jpg)![img](./media/316099a051c39707aaf66c9b34c78a51.jpg) | M1.2*5MM Round Head Self-tapping Screw |   4    |
-|   12   |      ![img](./media/b4d0114790ebf4b9d5a95b75e6902064.jpg)![img](./media/b4d0114790ebf4b9d5a95b75e6902064.jpg)      |           M2*12MM Round Head Screw           |   2    |
-|   13   |      ![img](./media/9df5d3c95ee214d17888e4bd9778d9dc.jpg)![img](./media/9df5d3c95ee214d17888e4bd9778d9dc.jpg)      |                M2  Nut                |   2    |
-|  14  |                   ![img](./media/2be95de9cb9d874a5061b5c49b72b2bd.png)                    |        Screwdriver        |  1   |
+|  1   |                    ![img](./media/z2.png)                    |      Basswood Board       |  1   |
+|  2   |                   ![img](./media/wps3.jpg)                   |      Expansion Board      |  1   |
+|  3   |                   ![img](./media/wps1.jpg)                   |           Servo           |  1   |
+|  4   |                   ![img](./media/wps4.jpg)                   |      Battery Holder       |  1   |
+|  5   |       ![img](./media/wps6.jpg)![img](./media/wps6.jpg)       |          M4 Nut           |  4   |
+|  6   | ![img](./media/wps5.jpg)![img](./media/wps5.jpg)![img](./media/wps5.jpg)![img](./media/wps5.jpg) |       M4*6mm Screw        |  4   |
+|  7   |       ![img](./media/wps7.jpg)![img](./media/wps7.jpg)       | M2.5*8MM Flat Head Screw  |  2   |
+|  8   |       ![img](./media/wps8.jpg)![img](./media/wps8.jpg)       |         M2.5 Nut          |  2   |
+|  9   |       ![img](./media/wps9.jpg)![img](./media/wps9.jpg)![img](./media/wps9.jpg)![img](./media/wps9.jpg)       | M1.4*8MM Round Head Screw |  4  |
+|   10   | ![img](./media/wps10.jpg)![img](./media/wps10.jpg)![img](./media/wps10.jpg)![img](./media/wps10.jpg) |               M1.4  Nut               |   4    |
+|    11  | ![img](./media/wps11.jpg)![img](./media/wps11.jpg)![img](./media/wps11.jpg)![img](./media/wps11.jpg) | M1.2*5MM Round Head Self-tapping Screw |   4    |
+|   12   |      ![img](./media/wps12.jpg)![img](./media/wps12.jpg)      |           M2*12MM Round Head Screw           |   2    |
+|   13   |      ![img](./media/wps13.jpg)![img](./media/wps13.jpg)      |                M2  Nut                |   2    |
+|  14  |                   ![img](./media/q10.png)                    |        Screwdriver        |  1   |
 
 ------
 
@@ -101,9 +101,9 @@ The basic tutorial includes an introduction to the development board, how to use
 
 <p style="font-size:25px;color:red;">Note：If you are a novice, learn the basic tutorial for the corresponding development board (Micro:bit / ESP32 Easy Coding Board) first, so that you will learn how to use programming software and upload code.</p>
 
-Micro:bit Development Board Basic Tutorial： [Micro:bit Basic Tutorial](Microbit/Microbit Basic Tutoria.md)
+Micro:bit Development Board Basic Tutorial： [Micro:bit Basic Tutorial](Microbit/MicrobitBasicTutoria.md)
 
-ESP32 Easy Coding Board Basic Tutorial：[ESP32 Easy Coding Board Basic Tutorial](ESP32/ESP32 Easy Coding Board Basic Tutorial.md)
+ESP32 Easy Coding Board Basic Tutorial：[ESP32 Easy Coding Board Basic Tutorial](ESP32/ESP32EasyCodingBoardBasicTutorial.md)
 
 ------
 
@@ -111,135 +111,135 @@ ESP32 Easy Coding Board Basic Tutorial：[ESP32 Easy Coding Board Basic Tutorial
 
 <p style="font-size:25px;color:red;">Note: Please learn the basic tutorial corresponding to the development board before assembling it.</p>
 
- step 1: Assemble the Expansion Board
+###  step 1: Assemble the Expansion Board
 
 Required components
 
-![an1](./media/4d2be90300c0b21b6f11a2c6212ecb2e.png)
+![an1](./media/an1.png)
 
 1. Align the expansion board with the holes in the basswood board, then fix it with screws.
 
-![an2](./media/0e90da9cf18900b656596a8567c6626f.png)
+![an2](./media/an2.png)
 
 ------
 
 2. Complete
 
-![an3](./media/ad882132fa7d5ff25d85786ca68c3c65.png)
+![an3](./media/an3.png)
 
 ------
 
-step 2: Assemble the Battery Holder
+### step 2: Assemble the Battery Holder
 
 Required components
 
-![an4](./media/65a9d825ce258bac6e4668ca04d2a58f.png)
+![an4](./media/an4.png)
 
 1.Align the battery holder with the holes in the basswood board, then fix it with screws (pay attention to the big hole next to the screw hole when assembling, which is used to pass the wire of the battery holder).
 
-![an5](./media/8d65e500102f394125d8bdc851aa60c6.png)
+![an5](./media/an5.png)
 
 2. Complete
 
-![2](./media/1a4ab02e1c16abe52fe74d796eed1567.png)
+![2](./media/an6.png)
 
 
 
 ------
 
-step 3: Assemble the Ultrasonic Module Ultrasonic Module
+### step 3: Assemble the Ultrasonic Module Ultrasonic Module
 
 Required components
 
-![an7](./media/7a44abea158755b845ec1790888a870f.png)
+![an7](./media/an7.png)
 
 ------
 
 1.Align the ultrasonic module with the holes in the basswood board, then fix it with screws.
 
-![an8](./media/932ce3803570f5db9e2042c9a94bd2ed.png)
+![an8](./media/an8.png)
 
 2. Complete
 
-![an9](./media/a7a7d0bff39a8e2883d8bf29f07e73f3.png)
+![an9](./media/an9.png)
 
 ------
 
-step 4: Assemble the Tail
+### step 4: Assemble the Tail
 
 Required components
 
-![an10](./media/cf65ca5dd8945e75c33152b4efa15357.png)
+![an10](./media/an10.png)
 
 1.Assemble two parallel basswood boards to the left tail. 
 
-![an11](./media/a09236fbd74f686da4059855056df2d8.png)
+![an11](./media/an11.png)
 
 2.Assemble the right tail to the parallel basswood board. 
 
-![an12](./media/563f7664c0febf9b68e59293f60e6511.png)
+![an12](./media/an12.png)
 
 3.
 
-![image-20240403135554599](./media/d59e712cedd91a56aa6aa485ee45cf42.png)
+![image-20240403135554599](./media/an13.png)
 
-![image-20240403135739412](./media/24ae4fd5eb71de611957a3dc6f4c852c.png)
+![image-20240403135739412](./media/an14.png)
 
 4.
 
-![image-20240403135921632](./media/115e06f6932fcf6d2d04af513777ee74.png)
+![image-20240403135921632](./media/an15.png)
 
-![image-20240403140019648](./media/973827706bf407e367c1ba09f5bc0bda.png)
+![image-20240403140019648](./media/an16.png)
 
-step 5: Crocodile Head
+### step 5: Crocodile Head
 
 Required components
 
-![an17](./media/caa7c09877b47ce1f2e4fb6af8df0593.png)
+![an17](./media/an17.png)
 
 1.First, assemble the crocodile’s eyes.
 
 <p style="color:red">Note: When assembling, pay attention to the direction of the bottom plate. The bigger one is on the left, as shown below.</p>
 
-![image-20240403151134748](./media/e3e5d23fc4376353ebc8f753598eef94.png)
+![image-20240403151134748](./media/an18.png)
 
 2.
 
 <p style="color:red">Note: Please confirm the direction of the basswood boards on both sides according to the picture below.</p>
 
-![image-20240403150916567](./media/96542d89d902ac5f54fa37f52bfed2a6.png)
+![image-20240403150916567](./media/an19.png)
 
 3.
 
-![image-20240403152047879](./media/e67e1a4a8362404e5576dbc659c7cd7d.png)
+![image-20240403152047879](./media/an20.png)
 
-![image-20240403152127607](./media/86f2d2b4399c8f175ff3befb0c036a21.png)
+![image-20240403152127607](./media/an21.png)
 
 4.
 
-![image-20240403152354942](./media/eed06ae57fcec299793faef825038c91.png)
+![image-20240403152354942](./media/an22.png)
 
-![image-20240403152435776](./media/2bbb68aef176e81fbaacc9a17bd94442.png)
+![image-20240403152435776](./media/an23.png)
 
 
 
 ------
 
-step 6: Assemble the Servo
+### step 6: Assemble the Servo
 
  Required components
 
-![an24](./media/803b8d2af33b9e0abd874efc1ec95e8b.png)
+![an24](./media/an24.png)
 
 1.Place the servo into the groove and align the two screw holes.
 
 <p style="color:red">Note: Please confirm the servo direction according to the picture below.</p>
 
-![image-20240403153038352](./media/0863f95027f2468c4307c78660afbc0c.png)
+![image-20240403153038352](./media/an25.png)
 
 2.Use M2x12 screws and M2 nuts to fix the servo to the basswood board.
 
-![an26](./media/2e227bf88c6278509318522eb5390099.png)
+![an26](./media/an26.png)
 
 3.Set the current angle of the servo to 90 degrees.
 
@@ -255,7 +255,7 @@ step 6: Assemble the Servo
 |       3V3       |  V（Red wire）   |
 |      io16       | S（Yellow wire） |
 
-![270524b926a712f77fbe812345740719_720](./media/abb16368e88a1e28f3c257770383f9f4.jpg)
+![270524b926a712f77fbe812345740719_720](./media/an41.jpg)
 
 **ESP32 Easy Coding Board:**
 
@@ -265,7 +265,7 @@ Link for setting the servo to 90 degrees of ESP32 Easy Coding Board：[Tap it to
 
 After the code is uploaded successfully, the servo will first rotate to 0 degrees and then rotate to 90 degrees.
 
-![code1](./media/08013bd14e4c5ae969eb4bdf33dc95c1.png)
+![code1](./media/code1.png)
 
 
 
@@ -277,61 +277,61 @@ Link for setting the servo to 90 degrees of Micro:bit Board：[Tap it to downloa
 
 After the code is uploaded successfully, the servo will first rotate to 0 degrees and then rotate to 90 degrees.
 
-![image-20240408085156074](./media/d15d87972751ab2305ad8b301b573540.png)
+![image-20240408085156074](./media/code2.png)
 
 4.
 
-![an27](./media/900fafa72a5cf49179c081e5467a9e95.png)
+![an27](./media/an27.png)
 
-![image-20240406145431672](./media/fdc38b50d9942b227c034e99931d8a53.png)
+![image-20240406145431672](./media/an28.png)
 
 5.
 
 <p style="color:red">Note：Set the angle of the servo to 90 degrees.</p>
 
-![an29](./media/f787ef31da2832d55e37d074c4e8b95c.png)
+![an29](./media/an29.png)
 
-step 7: Overall Assembly
+### step 7: Overall Assembly
 
-![an30](./media/964ddc95eb0f1025e868215c7a3ae440.png)
+![an30](./media/an30.png)
 
 7.1
 
-![an31](./media/d5dd162b851bb5e7cb62ec4feb0ce0ca.png)
+![an31](./media/an31.png)
 
-![image-20240406161709949](./media/e2dc2ed284037098f7d7584e19256339.png)
+![image-20240406161709949](./media/an32.png)
 
-![an33](./media/bbb5964077ea2a63b8e37bab43f5f6df.png)
+![an33](./media/an33.png)
 
 7.2 
 
 <p style="color:red">Note: Connect the wires before assembling the basswood board.</p>
 
-![e72365daba3dd36cb91c841af584fe06_720](./media/3c5506442abffeddaac064a1b40aa137.jpg)
+![e72365daba3dd36cb91c841af584fe06_720](./media/an720.jpg)
 
-![image-20240407084026174](./media/42a966aa55cba9e14a6e9a503ed43af2.png)
+![image-20240407084026174](./media/an34.png)
 
 7.3
 
-![image-20240407101626835](./media/c4f2176bd1fbbdaa007a050a74c41708.png)
+![image-20240407101626835](./media/an35.png)
 
 7.4
 
-![image-20240407102447636](./media/02a17fdbcba4bfb0dd7558b4de57004e.png)
+![image-20240407102447636](./media/an36.png)
 
 7.5
 
-![image-20240407102738697](./media/e31abfb5866cd8dbdeb40791f4d75fc1.png)
+![image-20240407102738697](./media/an37.png)
 
-![image-20240407102800334](./media/6e27eb4b79bc07711c894c440352c716.png)
+![image-20240407102800334](./media/an38.png)
 
 7.6
 
-![image-20240407103137878](./media/4ef14e711bd70aa1a01ca26271f9b79c.png)
+![image-20240407103137878](./media/an39.png)
 
 7.7
 
-![image-20240407103523099](./media/f15eb9372fb3096fb1ac5cb248f503e8.png)
+![image-20240407103523099](./media/an40.png)
 
 7.8 Wiring 
 
@@ -343,7 +343,7 @@ Servo
 |       3V3       |   V   |
 |    P9 / io16    |   S   |
 
-![270524b926a712f77fbe812345740719_720](./media/abb16368e88a1e28f3c257770383f9f4.jpg)
+![270524b926a712f77fbe812345740719_720](./media/an41.jpg)
 
 Ultrasonic Module
 
@@ -356,23 +356,23 @@ Pay attention to the color of the ultrasonic connecting wire.
 |    P8 / io4     | Trig（White） |
 |   P12 / io15    | Echo（Brown） |
 
-![753cf8f67fba63a8b8e91ee78077aadd](./media/1d158225cb97f8df6ec9707db2dd62cb.jpg)
+![753cf8f67fba63a8b8e91ee78077aadd](./media/an42.jpg)
 
 Power Port                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
-![an43](./media/6cb087cdc8f9658682513bb972022cdf.png)
+![an43](./media/an43.png)
 
 7.9 Assemble the tail: Connect the wires before assembling the tail.
 
-![image-20240407105454324](./media/8852d3127d9ea5f55b6f655ca57e351f.png)
+![image-20240407105454324](./media/an44.png)
 
 7.10 Assemble the latch
 
-![20240407110133](./media/c6e99249396710ab967275c8f14fd567.png)
+![20240407110133](./media/an45.png)
 
 7.11 Product Display
 
-![image-20240407111358310](./media/05414e1b1aeedcfdda06548d3e177690.png)
+![image-20240407111358310](./media/an46.png)
 
 ------
 
@@ -380,9 +380,9 @@ Power Port
 
 In the crocodile tutorial, you will learn how to drive the servo according to the development board and read the ultrasonic distance, and then combine the two modules to achieve the effect of hand biting crocodile.
 
-Link for Micro:bit Development Board Crocodile Tutorial：[Biting Crocodile Micro:bit Tutorial](Microbit/Microbit Biting Crocodile Tutorial.md)
+Link for Micro:bit Development Board Crocodile Tutorial：[Biting Crocodile Micro:bit Tutorial](Microbit/MicrobitBitingCrocodileTutorial.md)
 
-Link for ESP32 Easy Coding Board Tutorial：[Biting Crocodile ESP32 Easy Coding Board Tutorial](ESP32/ESP32 Easy Coding Board Biting Crocodile Tutorial.md)
+Link for ESP32 Easy Coding Board Tutorial：[Biting Crocodile ESP32 Easy Coding Board Tutorial](ESP32/ESP32EasyCodingBoardBitingCrocodileTutorial.md)
 
 ------
 
