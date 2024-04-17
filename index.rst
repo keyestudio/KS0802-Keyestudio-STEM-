@@ -4,7 +4,7 @@
    :caption: keyestudio docs
 
    README.md
-   docs/index
+   docs/index.md
 
 
 
