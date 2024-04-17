@@ -1,16 +1,20 @@
 # BBC Micro:bit
 
-## 1.Micro:bit是什么?
+## 1.What is Micro:bit?
 
-Micro:bit是由ARM、巴克莱、element14、微软等机构与英国广播公司（BBC）合作推出的一款基于ARM架构的开源硬件平台，核心设备是32位Arm Cortex-M4带有FPU的微处理器，Micro:bit主板只有信用卡一半大小，但功能非常强大。Micro:bit V2.0主板拥有丰富的板资源，搭载了5×5可编程LED点阵、2颗可编程按键、加速度计、电子罗盘、温度计、可触摸感应的Logo、MEMS麦克风、低功耗蓝牙等电子模块，背面还有一个蜂鸣器，可以在没有外部设备的情况下也可以播放各种声音。此外，Micro:bit主板还支持休眠模式，用户可以长按Micro:bit主板后面的复位&电源按钮，使进入睡眠模式，降低电池功耗。
-Micro:bit开发板的功能强大，具有易用性和扩展性，底部齿轮设计的金手指，它可以很好的通过固定鳄鱼夹与各种电子元件互动。支持读取传感器数据，控制舵机与RGB灯带等，也可以插入扩展板连接各种传感器。Micro:bit支持多种代码及图形化编程平台，支持几乎所有的PC和移动设备，具有免安装驱动，电子模块集成度高，且带有串口监控功能，方便调试！
-Micro:bit应用非常广泛，可以用于编写电子游戏，声光互动，机器人控制，科学实验，可穿戴装置开发等，可以实现任何酷炫的小发明，无论是机器人还是乐器，没有做不到只有想不到。创造更多的创意作品。
+Micro:bit is an open source hardware platform based on the ARM architecture, which is launched by British Broadcasting Corporation (BBC) together with ARM, Barclays, element14 and Microsoft. The  core device is a 32-bit Arm Cortex-M4 with FPU micro-processing.
+
+Though it is just the size of a credit card, the Micro:bit main board is equipped with loads of components, including a 5*5 LED dot matrix, 2  programmable buttons, an accelerometer, a compass, a thermometer, a  touch-sensitive logo, a MEMS microphone, a Bluetooth module of low  energy, as well as a buzzer. Thus, multiple sounds can be played without external devices. In addition, the Micro:bit board supports sleep mode. Users can long press the reset & power button on the back of the Micro:bit board to enter sleep mode and reduce battery power consumption.
+
+Micro:bit development board is powerful, which is easy to use and expand. The gold finger of the bottom gear design can interact with various electronic components by fixing the alligator clips. Moreover, this board is capable of reading the data of sensors, controlling servos and RGB lights, and it can be attached with a shield to connect various sensors. It also supports a variety of programming platforms and is compatible with almost all PCs and mobile devices without installing the driver. It is of high integration of electronic modules with serial monitoring function for easy debugging.
+
+Micro:bit has a wide range of applications. It can be used to program electronic games, sound and light interaction, robot control, scientific experiments and wearable device development. It can realize any cool little invention, whether it is a robot or a musical instrument. 
 
 ------
 
 
 
-### 1.1Micro:bit V2主板硬件分布图介绍：
+### 1.1Micro:bit V2 Mainboard Layout：
 
 ![img](./media/m1.png)
 
@@ -18,23 +22,23 @@ Micro:bit应用非常广泛，可以用于编写电子游戏，声光互动，�
 
 
 
-### 1.2Micro:bit V2引脚配置介绍，如下图所示：
+### 1.2Micro:bit V2 Pin-out：
 
 ![img](./media/m2.png)
 
-Micro:bit引出的引脚中，其引脚功能分类如下表所示：
+Micro:bit pin functions：
 
-|     功能      |                             引脚                             |
-| :-----------: | :----------------------------------------------------------: |
-|     GPIO      | P0，P1，P2，P3，P4，P5，P6，P7，P8，P9，P10，P11，P12，P13，P14，P15，P16，P19，P20 |
-|    ADC/DAC    |                   P0，P1，P2，P3，P4，P10                    |
-|      IIC      |                    P19（SCL），P20（SDA）                    |
-|      SPI      |             P13（SCK），P14（MISO），P15（MOSI）             |
-|  PWM（常用）  |                   P0，P1，P2，P3，P4，P10                    |
-| PWM（不常用） |  P5、P6、P7、P8、P9、P11、P12、P13、P14、P15、P16、P19、P20  |
-|    已占用     | P3(LED Col3)，P4(LED Col1)，P5(Button A)，P6(LED Col4)，P7(LED Col2)，P10(LED Col5)，P11(Button B) |
+|        Function        |                             Pin                              |
+| :--------------------: | :----------------------------------------------------------: |
+|          GPIO          | P0，P1，P2，P3，P4，P5，P6，P7，P8，P9，P10，P11，P12，P13，P14，P15，P16，P19，P20 |
+|        ADC/DAC         |                   P0，P1，P2，P3，P4，P10                    |
+|          IIC           |                    P19（SCL），P20（SDA）                    |
+|          SPI           |             P13（SCK），P14（MISO），P15（MOSI）             |
+|  PWM（commonly used）  |                   P0，P1，P2，P3，P4，P10                    |
+| PWM（uncommonly used） |  P5、P6、P7、P8、P9、P11、P12、P13、P14、P15、P16、P19、P20  |
+|        Occupied        | P3(LED Col3)，P4(LED Col1)，P5(Button A)，P6(LED Col4)，P7(LED Col2)，P10(LED Col5)，P11(Button B) |
 
- 详细信息请参考官方网站：[Microbit hardware](https://tech.microbit.org/hardware/edgeconnector/)
+ Visit the official website for more details：[Microbit hardware](https://tech.microbit.org/hardware/edgeconnector/)
 
 https://microbit.org/guide/hardware/pins/
 
@@ -42,35 +46,35 @@ https://microbit.org/guide/hardware/pins/
 
 
 
-### 1.3Micro:bit主板使用注意事项：
+### 1.3 Notes for the Application of Micro:bit：
 
--  Micro:bit主板上有很多精密的电子元件，建议戴上硅胶保护套进行使用，防止短路。
--  Micro:bit主板的IO口驱动能力很弱，IO口电流不足300mA，请勿接大电流器件（例如大舵机MG995、直流电机），否则会烧坏Micro:bit主板，使用前必须完全了解清楚你所使用的器件电流情况，一般建议配搭Micro:bit扩展板进行使用。
--  供电建议从Micro:bit主板的USB口进行供电，或者Micro:bit主板上的3V电池座接口。Micro:bit主板本身IO口是3V电平，所以是不支持5V传感器的，如需支持5V传感器需要使用 Micro:bit扩展板。
--  使用与Micro:bit主板LED点阵的共用引脚（如P3、P4、P6、P7、P10），记得在代码中把LED点阵禁用掉，否则会有LED点阵乱亮的现象。
--  不要使用IO 口P19、P20，P19和P20是不能当做IO口来使用的，虽然makecode软件上显示可以使用，实际是用不了的！只能用于I2C通讯。
--  3V电池座接口上不能使用超过3.3V电池，插上去很容易会把Micro:bit主板烧坏。
--  禁止放在金属制品上使用，以免发生短路。
+- It is recommended to cover it with a silicone protector to prevent short circuit for it has a lot of sophisticated electronic components.
+- Its IO port is very weak in driving since it can merely handle current less than 300mA. Therefore, do not connect it with devices operating in large current, such as servo MG995 and DC motor or it will get burnt. Furthermore, you must figure out the current requirements of the devices before you use them and it is generally recommended to use the board together with a Micro:bit shield.
+- It is recommended to power the main board via the USB interface or via the battery of 3V. The IO port of this board is 3V, so it does not support sensors of 5V. If you need to connect sensors of 5 V, a  Micro: Bit expansion board is required.
+- When using pins(P3, P4, P6, P7 and P10)shared with the LED dot  matrix, blocking them from the matrix or the LEDs may display randomly.
+- Pin 19 and 20 can not be used as IO ports though the Makecode shows they can. They can only be used as I2C communication.
+- The battery port of 3V cannot be connected with battery more than 3.3V or the main board will be damaged.
+- Forbid to operate it on metal products to avoid short circuit.
 
-**总之：**Micro:bit主板就像是一台微型计算机，它使编程变得有形，并促进数字创造力。关于编程环境，BBC提供了一个在线编程网站：<https://microbit.org/code/> 该网站有一个易于使用的图形化程序MakeCode。
+To put it simple, Micro:bit V2 main board is like a microcomputer,  which has made programming at our fingertips and enhanced digital innovation. And as for programming environment, BBC provides a website: https://microbit.org/code/, which has an easy-to-use graphical program MakeCode.
 
 ------
 
 
 
-## 2.Micro:bit驱动安装说明
+## 2.Micro:bit Driver Installation
 
-**micro:bit是可以免安装USB驱动的，如果你的电脑识别不了micro:bit主板，则需要安装一下micro:bit驱动。**
+**The micro:bit can be installed without a USB driver. However, if your computer fails to recognize the main board, you need to install the diver.**
 
-**驱动安装：**
+**Driver installation：**
 
-**（网盘会存放对应教程驱动文件，请自行下载）**
+**（Please download tutorials in network disk.）**
 
-首先将micro:bit主板用micro USB数据线连接到电脑上
+Connect micro:bit mainboard to computer via USB cable.
 
 ![img](./media/m11.png)
 
-然后鼠标左键双击驱动文件![img](./media/m3.png)，点击Install。
+Click the driver file![img](./media/m3.png)and tap Install.
 
 ------
 
@@ -78,13 +82,13 @@ https://microbit.org/guide/hardware/pins/
 
 ------
 
-继续点击Install，安装驱动。
+Click Install.
 
 ![img](./media/m5.png)
 
 ------
 
-先点击“Install”，再点击“Finish”，安装完成。
+Click “Install” and “Finish”.
 
 ![img](./media/m6.png)
 
@@ -94,7 +98,7 @@ https://microbit.org/guide/hardware/pins/
 
 ------
 
-安装完成后，点击“Computer” —>“Properties”—> “Device manager”,我们可以看到下图。
+Click “Computer”  —> “Properties” —> “Device manager”.
 
 ![img](./media/m8.png)
 
@@ -102,25 +106,29 @@ https://microbit.org/guide/hardware/pins/
 
 
 
-## 3代码与编程
+## 3. Code and Programming
 
-以下的步骤说明基于Windows 操作系统，如果你使用的是其他操作系统，可以将其作为参考。
+The following instructions are applied for Windows system but it can also serve as a reference if you are using a different system.
 
-### 3.1快速开始
+### 3.1 Procedures
 
-本节介绍如何为micro:bit编写程序以及如何将其下载到micro:bit主板。micro:bit官方网站上有非常详细的教程，你可以参考：<https://microbit.org/guide/quick/>
+This chapter describes how to write program and load the program to the  Micro: Bit mainboard. Visit official website for more details：<https://microbit.org/guide/quick/>
 
-#### 3.1.1Step 1: 连接Micro:bit主板
+#### 3.1.1 Step 1: Connect the Micro:bit
 
-通过Micro USB线将micro:bit 主板连接到电脑，（使用移动动设备对micro:bit进行编码，请移步查看：<https://microbit.org/get-started/user-guide/mobile/>） Macs、PCs、 Chromebooks and Linux系统（包括Raspberry Pi）都支持micro:bit主板。
+Connect the board to computer via USB cable.
+
+For how to program via mobile deveices：<https://microbit.org/get-started/user-guide/mobile/>）
+
+Multiple operation systems are compatible with this board, including Macs, PCs, Chromebooks and Linux (Raspberry Pi).
 
 ![img](./media/m11.png)
 
 ------
 
-micro:bit主板背后的红色LED指示灯会显示micro:bit 主板有电了，不管是电池还是micro USB数据线。在micro:bit主板上，当你的电脑通过micro USB与micro:bit主板通信时，黄色LED指示灯会闪烁，例如当你正在烧入一个“hex”程序文件时。
+If the red LED on the back of the board is on, then the board is powered. When your computer communicates with the main board via the USB cable, the yellow LED on it will flashes. For example, it will flash when you burn a “hex”file.
 
-Micro:bit主板将在你的电脑上显示为一个名为'MICROBIT'的驱动器。但请注意，它不是普通的USB磁盘！如下图：
+Then Micro: bit main board will display a driver named “MICROBIT(E:)” on your computer. Please note that it is not an ordinary USB disk as shown below.
 
 ![img](./media/m12.png)
 
@@ -128,11 +136,16 @@ Micro:bit主板将在你的电脑上显示为一个名为'MICROBIT'的驱动器�
 
 
 
-#### 3.1.2Step 2: 编写程序：
+#### 3.1.2 Step 2: Write Programs：
 
-在浏览器中访问链接：<https://makecode.microbit.org/>，然后单击“新建项目”，出现“创建项目”对话框，在对话框中输入“heartbeat”，单击“创建 √”并开始编程。
-如果你的电脑具有Windows 10操作系统，则还可以使用Windows 10 App进行编程，这与在浏览器上进行编程完全相同。Windows 10 App下载链接：[https://www.microsoft.com/](https://www.microsoft.com/zh-cn/p/makecode-for-micro-bit/9pjc7sv48lcx?ocid=badgep&rtc=1&activetab=pivot:overviewtab)
-（以下是以Google Chrome为例，其他浏览器类似）
+Online version of Makecode：<https://makecode.microbit.org/>.
+
+Click **New Project**. The dialog box **Create a Project** appears, fill it with **heartbeat** and click **Create √** .
+
+If you are Windows 10 system, it is also viable to edit on the APP MakeCode for micro:bit , which is exactly like editing in the website.
+
+Windows 10 App download：[https://www.microsoft.com/](https://www.microsoft.com/zh-cn/p/makecode-for-micro-bit/9pjc7sv48lcx?ocid=badgep&rtc=1&activetab=pivot:overviewtab)
+Here we demonstrate on Google Chrome.
 
 ![img](./media/m13.png)
 
@@ -140,21 +153,21 @@ Micro:bit主板将在你的电脑上显示为一个名为'MICROBIT'的驱动器�
 
 ------
 
-编写一个micro:bit代码。 例如，从模块区拖放一些指令方块放入代码编辑区，然后在MakeCode编辑器中的Simulator上尝试你的程序，如下图（和视频）所示，该图（和视频）显示了如何对heartbeat进行编程。
+Write a micro:bit code.
 
-下一节将进一步介绍Makecode。
+You can drag some **Blocks** to the editing area and then run your program in Simulator as shown below: we demonstrate on how to edit **heartbeat** program.
 
 ![img](./media/m15.png)
 
 ------
 
-点击“ JS JavaScript”，你可以看到对应的JavaScript语言代码程序，如下图：
+Click “ JS JavaScript” to check JavaScript language.
 
 ![img](./media/m16.png)
 
 ------
 
-你还可以点击“ JSJavaScript”，再点击下拉按钮选择“Python”，你还可以看到对应的Python语言代码程序，如下图：
+Click the arrow to switch to “Python” language.
 
 ![img](./media/m17.png)
 
@@ -162,11 +175,14 @@ Micro:bit主板将在你的电脑上显示为一个名为'MICROBIT'的驱动器�
 
 
 
-#### 3.1.3Step 3: 下载代码：
+#### 3.1.3 Step 3: Download code：
 
-如果使用Windows 10 App编写程序，则只需单击“下载”按钮，该代码程序将直接下载到micro:bit主板，而无需任何其他操作。 
-如果使用浏览器编写程序，请按照以下步骤操作： 
-单击编辑器中的“下载”按钮。 这将下载一个“hex”文件，该文件是micro:bit主板可以读取的格式。十六进制文件下载后，将其复制到你的micro:bit 主板，就像将文件复制到USB驱动器一样。 在Windows上，你还可以右键单击并选择“发送到→MICROBIT”将“hex”文件拷贝到micro:bit主板。 
+If your computer is Windows 10 , just tap download and the program will be downloaded to your Micro: bit board.
+
+If you are writing program through the website, following these steps:
+
+1. Click the ‘Download’ in the editor to download a “hex” file, which can be read by the micro:bit board;
+2. Copy the “hex” file to your board. For Windows, you can also click and select ‘Send to → MICROBIT(E:) ‘to copy the hex file to the Micro: bit board.
 
 ![img](./media/m18.png)
 
@@ -174,101 +190,114 @@ Micro:bit主板将在你的电脑上显示为一个名为'MICROBIT'的驱动器�
 
 ------
 
-也可以将“hex”文件直接拖入MICROBIT磁盘中。
+Or you may directly drag the “hex” file in **MICROBIT**.
 
 ![img](./media/m20.png)
 
 ![img](./media/m21.png)
 
-将下载好的“hex”文件拷贝到micro:bit 主板过程中，micro:bit主板背面的黄色信号灯会闪烁，当拷贝完成后黄色信号灯停止闪烁，保持长亮。
+During the process of copying the hex file to the Micro: bit, the yellow LED on the back of the board flashes. When the duplication is completed, the LED will stop flashing and remain on.
 
-#### 3.1.4Step 4: 运行程序：
+#### 3.1.4 Step 4: Run Program：
 
-将代码程序上传micro: bit主板后，通过micro USB线或外接电源给micro: bit主板供电，micro: bit主板上5 x 5 可编程LED点阵显示heartbeat的图案。
+After the program is uploaded to the Micro: bit, you can power it via USB cable or an external power. Then the 5 x 5 LED dot matrix displays a heartbeat pattern.
 
-USB供电：
+Power via USB:
 
 ![img](./media/m22.png)
 
 ------
 
-外接3V电源供电：
+Power via external 3V：
 
 ![img](./media/m23.png)
 
-警告：
-每次编程时，MICROBIT驱动器都会自动弹出并返回，但是你的十六进制（hex）文件将会消失。 micro:bit主板只能接收十六进制（hex）文件，不会存储任何其他文件！
+
+
+**Caution:**
+
+- When you program, the driver of Micro: bit will automatically eject and return so the hex files will disappear.
+- The micro:bit board can only receive hexadecimal (hex) files and will not store any other files.
 
 ------
 
 
 
-#### 3.1.5Step5：掌握：
+#### 3.1.5 Step5: Other Programming Languages：
 
-本小节向你展示了如何开始使用micro:bit主板，但是除了MakeCode图形化编程之外，你还可以使用其他语言来编写micro:bit的程序代码。转到链接：<https://microbit.org/code/>查看不同的语言编程，或查看链接：<https://microbit.org/projects/>，了解你可能想要尝试的一些内容。
+This chapter has described how to use the Micro:bit main board.
+
+Except for the Makecode graphical programming, if you want to write Micro:bit programs in other languages, visit https://microbit.org/code/ to learn more, or visit https://microbit.org/projects/ to find something you like.
 
 ### 3.2Makecode
 
-在Google Chrome访问链接：<https://makecode.microbit.org/>，打开makecode在线版本。或打开 Windows 10 App makecode版本。 
+Google Chrome online version：<https://makecode.microbit.org/>，or open the Windows 10 makecode App.
 
 ![img](./media/m24.png)
 
 ------
 
-点击 “New Project”,出现“创建项目”对话框，在对话框中输入“heartbeat”，单击“创建 √”进入Makecode 编译器，Makecode 编译器如下: 
+Click “New Project” and enter “heartbeat” to edit the code. Here is the main interface of Makecode.
 
 ![img](./media/m25.png)
 
-在代码编辑区中，有两个固定的指令方块“on start”和“forever”。 
-上电或复位后，“on start”指令方块中的代码将仅执行一次；并且“forever”指令方块中的代码将循环执行。
+There are blocks “on start” and “forever” in the code editing area.
+
+When the power is plugged or reset, “on start” means that the code in the block only executes once, while “forever” implies that the code runs cyclically.
 
 ------
 
 
 
-### 3.3快速下载
+### 3.3 Quick Download
 
-如前所述，如果使用makecode的Windows 10 App，则可以通过单击“下载”按钮将代码快速下载到micro:bit主板。 
-使用makecode的浏览器版本可能需要更多步骤。但是，如果你将Google Chrome用于Android，ChromeOS，Linux，macOS和Windows 10系统，则可以实现快速下载功能。 
-在这里，我们使用Chrome的webUSB功能，该功能允许网页访问你的micro USB硬件设备。 我们将按照以下步骤完成micro:bit设备与网络连接和配对。 如前所述，如果使用makecode的Windows 10 App，则可以通过单击“下载”按钮将代码快速下载到micro:bit主板。 
-使用makecode的浏览器版本可能需要更多步骤。但是，如果你将Google Chrome用于Android，ChromeOS，Linux，macOS和Windows 10系统，则可以实现快速下载功能。 
-在这里，我们使用Chrome的webUSB功能，该功能允许网页访问你的micro USB硬件设备。 我们将按照以下步骤完成micro:bit设备与网络连接和配对。
+As mentioned before, if your computer is Windows 10 and you have downloaded the MakeCode APP. you can quickly download codes to the Micro: Bit main board by selecting ‘Download’.
 
-**配对装置：**
+While it is a little more trickier if you are using a browser to enter Makecode. However, if you use Google Chrome for Android, ChromeOS, Linux, macOS and Windows 10, the process can be easier.
 
-用micro USB线连接电脑和micro:bit主板。 
+We use the webUSB of Chrome to access the hardware device.
+
+You could refer to the following steps to connect and pair devices.
+
+
+
+**Devices Pairing：**
+
+Connect the board to computer via USB cable.
 
 ![img](./media/m11.png)
 
 ------
 
-单击“下载”后面的“...”，然后单击“Connect device”。
+Click “…” and “Connect device”.
 
 ![img](./media/m26.png)
 
 ------
 
-然后继续单击“Next”按钮。
+Click “Next”.
 
 ![img](./media/m27.png)
 
 ------
 
-再继续单击“Next”按钮。
+Click “Next”.
 
 ![img](./media/m28.png)
 
 ------
 
-在弹出窗口中选中对应的“设备”，然后单击“连接”按钮。 如果弹出窗口中没有设备，请参考以下内容：<https://makecode.microbit.org/device/usb/webusb/troubleshoot>
-当然，如果你不想点击链接进入相关页面中查看，你也可以在本教程的文件夹中直接阅读“用WebUSB排除下载过程中的故障.pdf”。 
-如果你的micro:bit主板出现问题是需要更新micro:bit的固件，在本教程的文件夹“如何更新Micro:bit主板的固件”中的文件“如何更新micro:bit主板的固件.pdf”介绍了如何更新micro:bit的固件，其内容来自：<https://microbit.org/guide/firmware/>
+Then select the corresponding device and click “Connect”. If no device shows up for selection, please refer to: https://makecode.microbit.org/device/usb/webusb/troubleshoot
+
+If the links are too troublesome, refer to **Troubleshooting** in tutorial.
+
+For how to update micro:bit firmware: https://microbit.org/guide/firmware/
 
 ![img](./media/m29.png)
 
 ------
 
-单击“Done”，设备连接成功。
+Click “Done”.
 
 ![img](./media/m30.png)
 
@@ -276,9 +305,9 @@ USB供电：
 
 ------
 
-**程序下载：**
+**Download Program：**
 
-设备连接成功后，单击“下载”按钮，程序将直接下载到Micro:bit主板，如果程序成功下载到Micro:bit主板上，下载按钮![img](./media/m32.png)会变成![img](./media/m33.png)
+After connection, click![img](./media/m32.png)and it will change into![img](./media/m33.png).
 
 ![img](./media/m34.png)
 
@@ -286,36 +315,37 @@ USB供电：
 
 
 
-### 3.4Makecode扩展库示例
+### 3.4 Makecode Extension Library
 
-#### 3.4.1添加扩展库文件
+#### 3.4.1 Add library
 
-您可以通过以下方法添加扩展库文件。 
-打开makecode，在任何项目下，先点击右上角的齿轮图标（设置），再点击Extensions。
+Please follow the steps to add extension files:
+
+Open makecode to enter a certain project, click the gear-shaped icon(settings) in the upper right corner to choose “Extensions”.
 
 ![img](./media/m35.png)
 
-------
 
-或者单击Advanced下的Extensions。
+
+Or click Advanced to add Extensions.
 
 ![img](./media/m36.png)
 
 ------
 
-可以选择通过搜索或者网址来选择扩展库。
+You can choose to select the extension library through search or URL.
 
 ![img](./media/m37.png)
 
 ------
 
-例子：想要控制舵机，则搜索servo，出现了很多库，选择我们想要的库即可。
+For instance, if you want to control a servo, you can search “servo” to add one.
 
 ![img](./media/m38.png)
 
 ------
 
-此时，模块栏就会出现Servos库，可以控制舵机了。
+Back to the interface and you can see a **Servos** library.
 
 ![img](./media/m39.png)
 
@@ -323,33 +353,33 @@ USB供电：
 
 
 
-#### 3.4.2更新或删除扩展库
+#### 3.4.2 Update/Delete library
 
-点击 **Js JavaScript** 按钮切换到文本代码。
+Click **Js JavaScript** to switch to text code.
 
 ![img](./media/m40.png)
 
 ------
 
-点击左边的Explorer. 
+Click Explorer.
 
 ![img](./media/m41.png)
 
 ------
 
-在扩展列表中找到扩展库文件。单击垃圾箱图标以删除Servos扩展库文件。
+Find the extension library file in the extension list. Click the trash icon to delete the Servos extension library file.
 
 ![img](./media/m42.png)
 
 ------
 
-选择Remove it即可删除。
+Click **Remove it**.
 
 ![img](./media/m43.png)
 
 ------
 
-再点击Blocks，切换回图形化编程。
+Click **Blocks** to return to graphical programming.
 
 ![img](./media/m44.png)
 
@@ -361,29 +391,25 @@ USB供电：
 
 
 
-### 3.5资源和代码
+### 3.5 Resources and Test Code
 
-该教程的资源和代码都可以在此下载链接中下载：
+Download link：https://fs.keyestudio.com/KS0801
 
-下载链接：https://fs.keyestudio.com/KS0801
+#### 3.5.1 Import Code
 
-#### 3.5.1导入代码
+We provide hexadecimal code files (project files) for each project.  The file contains all the contents of the project and can be imported directly, or you can manually build the code blocks.
 
-我们为每个项目提供十六进制代码文件（项目文件）。十六进制代码文件包含项目的所有内容，可以直接导入，你也可以手动拖动代码块来完成每个项目的代码程序。如果选择通过手动拖动代码块来完成项目代码，则可能需要添加必要的扩展库。
+**For simple projects, dragging a block of code to complete the program is recommended.**
 
-**对于简单项目，建议通过拖动代码块来完成项目。** 
+**For complex ones, it is recommended to conduct the program by loading the hex code files.**
 
-**对于复杂的项目，建议通过导入我们提供的十六进制代码文件来完成项目.** 
-
-接下来，我们以“ Heatbeat”项目为例，介绍如何加载代码。 
-
-打开Web版本的makecode或Windows10 APP版本的makecode，单击“Import”。
+Let’s take the “Heatbeat” project as an example to show how to load the code. Open the Web version of Makecode or the Windows 10 App  Makecode, and click “Import”.
 
 ![img](./media/m46.png)
 
 ------
 
-在弹出的对话框中，单击“导入文件”。
+Click “Import File…”.
 
 ![img](./media/m47.png)
 
@@ -391,7 +417,7 @@ USB供电：
 
 ![img](./media/m48.png)
 
-打开刚才下载的代码“Heart beat.hex”
+Choose “Heart beat.hex”
 
 ![img](./media/m49.png)
 
@@ -399,34 +425,28 @@ USB供电：
 
 ------
 
-除了上述将提供的项目代码程序文件直接导入到Makecode编译器中的方法之外，也可以将我们提供的项目代码程序文件直接拖入到Makecode编译器中的代码编辑区，如下图所示：
-
-![img](./media/m51.png)
+In addition to the above method, you can also drag the the test code into the code editing area, as shown below:![img](./media/m51.png)
 
 ------
 
-几秒钟后，项目成功加载。
+Wait for loading.
 
 ![img](./media/m52.png)
 
-注意：如果你的电脑系统是Windows7/8而不是Windows 10，则在Google Chrome中是无法进行设备配对，从而读取不了一些传感器/模块的数字信号或模拟信号，可是又需要读取相应的传感器/模块的数字信号或模拟信号，那怎么办呢？这里就可以使用CoolTerm软件来读取串口数据的，下面是CoolTerm安装方法。
+If your computer is Win7/8, the pairing cannot be done via Google Chrome. Therefore, digital signal or analog signal of sensors and modules cannot be shown on the serial simulator. So CoolTerm software is a nice choice to read the serial data.
 
-------
+#### 3.5.2 Install CoolTerm
 
+CoolTerm download：<https://freeware.the-meiers.org/>
 
-
-#### 3.5.2CoolTerm软件安装
-
-这里需要安装CoolTerm程序软件，CoolTerm程序软件是用来在下面的一些实验中读取串口通讯的，这里我们提供了CoolTerm程序软件的下载链接：<https://freeware.the-meiers.org/>
-
-1. 现在，让我们来安装CoolTerm程序软件，这里我们是以PC Windows系统为例，选择下载安装CoolTerm Win，下载后解压并打开。（Mac系统和 Linux系统也类似）
+1. We take PC Windows as an example to download and unzip CoolTerm Win, and Mac/Linux can take it as a referance.
     ![img](./media/m53.png)
     
     ------
     
     
     
-2. 双击打开（注意：必须保证micro:bit驱动已安装和micro:bit主板连接到电脑上）
+2. Tap it. Make sure the driver is connect to computer.
 
     ![img](./media/m54.png)
 
@@ -456,49 +476,52 @@ USB供电：
 
 
 
-## 4.Micro:bit基础课程
+## 4.Micro:bit Basic Projects
 
-### 4.1 Project 1: 闪烁心
+### 4.1 Project 1: Heartbeat
 
 ![img](./media/k1.png)
 
-#### 1.实验介绍:
-这个项目很简单，你可以用一个micro:bit主板、一根Micro USB线和电脑就可以实现的，首先在micro:bit LED点阵上显示一个大的“心”，然后显示小的“心”，这个循环看起来就像心跳。这也是一个入门实验，让你进入micro:bit的编程世界。
+#### 1.Introduction:
+This project is easy to conduct with a micro:bit main board, a Micro USB cable and a computer. The micro:bit LED dot matrix will display a beating heart. It serves as a start for your entry to the programming  world!
 
-#### 2.所需组件:
+#### 2.Components:
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.
+
+![img](media/z3-17131644350021.png)
 
 ![img](./media/z3.png)
 
-#### 4.示例代码:
-（教程附带的资源文件中，找到Project 1代码文件夹）
+#### 4.Test Code:
+（Please check code in Project 1 file.）
 
 ![img](./media/k2.png)
 
 ![img](./media/k3.png)
 
-可以打开这个链接: <https://makecode.micro:bit.org/reference> 来了解更多关于micro: bit blocks的信息。
-然后可以直接进入链接：<https://makecode.micro:bit.org/>，编辑你的项目代码，如下：
+Visit https://makecode.micro:bit.org/reference to find more information about micro: bit blocks.
 
-**寻找指令方块：**
+Visit https://makecode.micro:bit.org/ to edit your project code.
+
+**Find code blocks:**
 
 ![img](./media/k4.png)
 
-**组合指令方块：**
+**Build blocks：**
 
 ![img](./media/k5.png)
 
-点击micro: bit在线编程工具的“JSJavaScript”,你可以看到对应的JavaScript语言代码程序：
+Click “JSJavaScript” to see Java code:
 
 ![img](./media/k6.png)
 
-点击micro: bit在线编程工具的“JSJavaScript”后面的下拉按钮，选择“Python”，你可以看到对应的Python语言代码程序：
+Pull down to click “Python” to see Python code:
 
 ![img](./media/k7.png)
 
@@ -506,39 +529,42 @@ USB供电：
 
 
 
-#### 5.实验现象:
+#### 5.Test Result:
 
-按照之前的方式将示例代码下载到micro:bit主板，利用micro USB数据线上电，micro:bit主板上的LED点阵屏切换显示“❤”图案和“![img](./media/k8.png)”图案，循环进行。   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：)
+After uploading test code to micro:bit main board and power on via the micro USB, the LED dot matrix shows patterns “❤” and “![img](./media/k8.png)”.
 
-**如果存在下载问题，请断开micro USB线和Micro:bit主板连接，然后重新连接它们并重新打开Makecode，以尝试再次下载。**
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：)
 
-### Project 2: 单个LED闪烁
+**If the downloading is not smooth, please remove the USB cable from the main board and then reconnect them and reopen Makecode to try  again.**
+
+### Project 2: Single LED Blinking
 
 ![img](./media/k1.png)
 
-#### 1.实验介绍:
-在这个项目中，我们尝试控制micro:bit主板上的LED点阵中的某个LED闪烁效果。 
+#### 1.Introduction:
+In this project, we intend to control a certain LED of the micro:bit main board and light it up.
 
-#### 2.所需组件:
+#### 2.Components:
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.
 
 ![img](./media/z3.png)
 
-#### 4.元件介绍：
-Micro:bit主板的LED点阵共由25个发光二极管组成，5个一组，分别对应X和Y方向，形成一个5×5的矩阵，且每个发光二极管是放置在行线（X）和列线（Y）的交叉点上，我们可以通过设置坐标点来实现对25个LED中某一个LED的控制。
-例如，想要LED点阵中第1行第1个LED点亮，可以设置坐标点为（0，0）；第1行第3个LED点亮，可以设置坐标点为（2，0）；第1列第5个LED点亮，可以设置坐标点为（0，4）；第3列第2个LED点亮，可以设置坐标点为（2，1），依此类推。
+#### 4.Knowledge：
+Micro:bit board consists of 25 light-emitting diodes, 5 pcs in a group, which correspond to Axis x and y, forging a 5*5 matrix. Moreover, every diode locates at the point of Axis (X) and (Y). 
+
+Virtually, we could control an LED by setting coordinate points. For instance, set coordinate point (0, 0) to turn on the LED at row 1 and column 1. Set (2, 0) to turn the LED at row 1 and column 3, and (0,4) for row 5 and column 1. 
 
 ![img](./media/k9.png)
 
-#### 5.示例代码:
+#### 5.Test Code:
 
-**寻找指令方块：**
+**Find code blocks：**
 
 ![img](./media/k10.png)
 
@@ -548,7 +574,7 @@ Micro:bit主板的LED点阵共由25个发光二极管组成，5个一组，分�
 
 ------
 
-**组合指令方块：**
+**Build blocks**：
 
 ![img](./media/k13.png)
 
@@ -556,38 +582,41 @@ Micro:bit主板的LED点阵共由25个发光二极管组成，5个一组，分�
 
 
 
-#### 6.实验现象:
+#### 6.Test Result:
 
-按照之前的方式将示例代码下载到micro:bit主板，利用micro USB数据线上电，可以看到坐标点(1,0)的LED的闪烁，持续1s，接着切换到坐标点(3,4)的LED闪烁，持续1s。循环进行。   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+After uploading test code to micro:bit main board and powering on via the USB cable, the LED in (1,0) lights up for 1s and the one in (3,4) shines for 1s.
 
-### Project 3: LED点阵显示
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+
+### Project 3: LED Dot Matrix
 
 ![img](./media/k1.png)
 
-#### 1.实验介绍:
-点阵在我们生活中很常见，很多都有用到它，比如LED广告显示屏，电梯显示楼层，公交车报站等等。
-Micro:bit主板的LED点阵共由25个发光二极管组成，上一课我们已经讲过通过设置坐标点来实现对LED点阵的25个LED中的某个LED的控制，这样可以通过设置多个坐标点控制多个LED的亮灭使得LED点阵能够显示图案、数字、字符串。我们也可以在特定代码中通过点击 LED点阵的灰白色小正方形点亮 LED点阵对应的LED来实现LED点阵显示图案、数字、字符串。除了上述方法还可以使用自定义图案使LED点阵显示图案。
+#### 1.Introduction:
+Dot matrix gains popularity in our life, such as LED screen, bus station and the mini TV in the lift.
 
-#### 2.所需组件:
+The LED dot matrix of Micro:bit mainboard consists of 25 light emitting diodes. In previous lesson, we control LED of Micro:bit board to form patterns, numbers and character strings by setting the coordinate points. In addition, we may click small squares of LED in a specific code to realize these formation, or display custom patterns on LED dot matrix.
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+#### 2.Components:
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
+
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.
 
 ![img](./media/z3.png)
 
-#### 4.示例代码:
+#### 4.Test Code:
 
-寻找指令方块：
+**Find code blocks:**：
 
 ![img](./media/k14.png)
 
 ------
 
-组合指令方块：
+**Build blocks**：
 
 ![img](./media/k15.png)
 
@@ -595,32 +624,33 @@ Micro:bit主板的LED点阵共由25个发光二极管组成，上一课我们已
 
 
 
-#### 5.实验现象:
-按照之前的方式将示例代码下载到micro:bit主板，利用micro USB数据线上电，我们就可以看到micro:bit主板的5×5 LED点阵开始显示数字1、2、3、4、5，然后循环显示“向下”图案![img](./media/k16.png)、字符串“Hello!”、“心”图案![img](./media/k17.png)、“东北”方向图案![img](./media/k18.png)、“东南”方向图案![img](./media/k19.png)、“西南”方向图案![img](./media/k20.png)和“西北”方向图案![img](./media/k21.png)！    [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+#### 5.Test Result:
+After uploading test code to micro:bit main board and powering on via the USB cable, the 5*5 dot matrix shows numbers 1, 2, 3, 4 and 5, and then it alternatively shows![img](media/k16-17131656935975.png), “Hello!”, ![img](media/k17-17131656935977.png), ![img](media/k18-17131656935979.png), ![img](media/k19-171316569359711.png), ![img](media/k20-171316569359813.png) and ![img](media/k21-171316569359815.png).
 
-### Project 4: 可编程按键
+​    [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+
+### Project 4: Programmable Buttons
 
 ![img](./media/k1-1.png)
 
-#### 1.实验介绍:
-按键可以控制电路的通断，把按键接入电路中，不按下按键的时候电路是断开的，一按下按键电路就通啦，但是松开之后就又断了。
-Micro:bit主板有三个按键，反面的是复位按钮，正面的是两个可编程按键，通过对两个可编程按键组合可以有三种组合，作为输入元件。我们结合上节课的LED点阵，一起来学习按键吧。我们做一个按键三连，分别按A、B和AB同时按，对应显示屏分别显示A、B和AB。
+#### 1.Introduction:
+The button can control the on and off of the circuit, which is disconnected when the button is not pressed, but it will be connected as soon as it is pressed. 
 
-#### 2.所需组件:
+Micro:bit board includes three buttons: a reset button on the back and two programmable buttons on the front. Press A, B and AB at the same time respectively, and the corresponding screen displays them respectively.
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+#### 2.Components:
 
-#### 3.实验接线:
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
 
-通过micro USB线将micro:bit主板连接到你的电脑上。
+#### 3.Connection:
 
-![img](./media/z3.png)
+Connect the board to your computer via micro USB cable.![img](./media/z3.png)
 
-#### 4.示例代码1:
+#### 4.Test Code1:
 
-寻找指令方块：
+**Find code blocks:**
 
 ![img](./media/k22.png)
 
@@ -628,7 +658,7 @@ Micro:bit主板有三个按键，反面的是复位按钮，正面的是两个�
 
 ------
 
-组合指令方块：
+**Build blocks**：
 
 ![img](./media/k24.png)
 
@@ -636,13 +666,15 @@ Micro:bit主板有三个按键，反面的是复位按钮，正面的是两个�
 
 
 
-#### 5.实验现象1:
+#### 5.Test Result 1:
 
-按照之前的方式将示例代码1下载到micro:bit主板，利用micro USB数据线上电，按下micro:bit主板上正面按键A且松开，我们可以看到5×5 LED点阵显示字符“A”；按下micro:bit主板上正面按键B且松开，我们可以看到5×5 LED点阵显示字符“B”，同时按下micro:bit主板上正面按键A和B且都松开，我们就可以看到5×5 LED点阵显示字符“AB”。   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+After uploading test code 1 and powering on with micro USB cable, the 5*5 LED dot matrix shows A if button A is pressed and then release, B if button B is pressed and release, and AB if buttons A and B are pressed together and then release.
 
-#### 6.示例代码2:
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
 
-寻找指令方块：
+#### 6.Test Code 2:
+
+**Find code blocks**
 
 ![img](./media/k25.png)
 
@@ -664,7 +696,7 @@ Micro:bit主板有三个按键，反面的是复位按钮，正面的是两个�
 
 ------
 
-组合指令方块：
+**Build blocks**：
 
 ![img](./media/k30.png)
 
@@ -672,10 +704,12 @@ Micro:bit主板有三个按键，反面的是复位按钮，正面的是两个�
 
 
 
-#### 7.实验现象2:
-按照之前的方式将示例代码2下载到micro:bit主板，利用micro USB数据线上电，按下micro:bit 主板上正面按键A，增加条形图高度，表现为LED点阵亮的行数增加；按下正面按键B，减少条形图高度，表现为LED点阵亮的行数减少。   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+#### 7.Test Result 2:
+After uploading test code 2 and powering on, press button A, the number of rows lit by the LED dot matrix will increase, when B is pressed, the number of rows lit by the LED dot matrix will decrease.
 
-### Project 5: 温度检测
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+
+### Project 5: Temperature Detection
 
 ![img](./media/k31.png)
 
@@ -683,17 +717,19 @@ Micro:bit主板有三个按键，反面的是复位按钮，正面的是两个�
 
 
 
-#### 1.实验介绍:
-   本实验项目将介绍Micro:bit对外界温度的检测，micro:bit主板实际上并不带温度传感器，而是nNRF52833应用处理器内置的温度传感器进行温度检测，所以检测的温度更接近处理器的温度，可能与周围环境温度存在一定的误差。传感器检测范围为：-40℃~105℃。
+#### 1.Introduction: 
+The Micro:bit main board is not equipped with a temperature sensor, which uses a nNFR52833 chip for temperature detection. Therefore,  the detected value is much closer to the temperature of the processor,  so there maybe deviation from the ambient value.
 
-#### 2.所需组件:
+Its detection range is -40 ~ 105℃.
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+#### 2.Components:
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
+
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.
 
 ![img](./media/z3.png)
 
@@ -701,9 +737,9 @@ Micro:bit主板有三个按键，反面的是复位按钮，正面的是两个�
 
 
 
-#### 4.示例代码:
+#### 4.Test Code :
 
-寻找指令方块：
+**Find code blocks:**
 
 ![img](./media/k32.png)
 
@@ -717,7 +753,7 @@ Micro:bit主板有三个按键，反面的是复位按钮，正面的是两个�
 
 ------
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k35.png)
 
@@ -725,21 +761,24 @@ Micro:bit主板有三个按键，反面的是复位按钮，正面的是两个�
 
 
 
-#### 5.实验现象1:
-按照之前的方式将示例代码1下载至micro: bit主板，利用micro USB数据线上电，点击“显示控制台(设备)”按钮：   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+#### 5.Test Result 1:
+After uploading test code 1 to micro:bit main board, powering on via the USB cable, and click “**Show console Device**”, the temperature value will be showed in the serial monitor as shown below.
+
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
 
 ![img](./media/k36.png)
 
 ------
 
-显示串口输出数据，用手按住Micro:bit主板的nNRF52833应用处理器，一段时间后，温度开始慢慢上升，如下图所示：
+When you touch the processor nNRF52833 on the board for a while, its temperature will rise gradually：
 
 ![img](./media/k37.png)
 
 ------
 
-如果你的电脑系统是Windows7/8而不是Windows 10，则在Google Chrome中是无法进行设备配对，这里需要使用CoolTerm软件来读取串口数字的。
-打开CoolTerm软件，点击Options，选择SerialPort，设置COM口和波特率，波特率设置为115200（经过测试，micro:bit  主板的USB串口通讯波特率是115200），点击OK后，最后点击Connect。
+If you’re running Windows 7 or 8 instead of Windows 10, Google Chrome won’t be able to match devices. So CoolTerm is needed.
+
+Open CoolTerm and click **Options** to select **SerialPort**, set COM port and put baud rate to 115200 (after testing, the baud rate of USB SerialPort communication on Micro: Bit main board is 115200), and then click **OK** and **Connect**.
 
 ![img](./media/k38.png)
 
@@ -749,7 +788,7 @@ Micro:bit主板有三个按键，反面的是复位按钮，正面的是两个�
 
 ------
 
-CoolTerm的串口监视器显示当前环境中的温度值变化，如下图：
+The CoolTerm serial monitor shows the change of temperature in the current environment, as shown below:
 
 ![img](./media/k39.png)
 
@@ -757,9 +796,9 @@ CoolTerm的串口监视器显示当前环境中的温度值变化，如下图：
 
 
 
-#### 6.示例代码2:
+#### 6.Test Code 2:
 
-寻找指令方块：
+**Find code blocks:**
 
 ![img](./media/k41.png)
 
@@ -777,7 +816,7 @@ CoolTerm的串口监视器显示当前环境中的温度值变化，如下图：
 
 ------
 
-组合指令方块： （注意：代码中的条件值35可以根据当地实际环境情况进行更改。）
+**Build blocks:** 35 in the code can be modified according to actual conditions. 
 
 ![img](./media/k45.png)
 
@@ -785,11 +824,13 @@ CoolTerm的串口监视器显示当前环境中的温度值变化，如下图：
 
 
 
-#### 7.实验结果2：
+#### 7.Test Result 2：
 
-按照之前的方式将示例代码2下载到micro:bit主板，利用micro USB数据线上电，当外界环境中的温度小于35℃时，micro:bit主板上的LED点阵屏显示图案![img](./media/k46.png)，用手按住micro:bit主板后面的温度传感器，当温度大于等于35℃时，LED点阵屏显示图案![img](./media/k47.png)。    [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+After uploading the code 2 to the board, when the ambient temperature is less than 35℃, the 5*5 LED dot matrix shows![img](./media/k46.png). Press the sensor, when the temperature is equal to or greater than 35℃, and then![img](./media/k47.png)will appear.
 
-### Project 6: 地磁传感器
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+
+### Project 6: Geomagnetic Sensor
 
 ![img](./media/k48.png)
 
@@ -797,20 +838,24 @@ CoolTerm的串口监视器显示当前环境中的温度值变化，如下图：
 
 
 
-#### 1.实验介绍：
+#### 1.Introduction：
 
-本实验项目主要介绍micro:bit地磁传感器(磁力计)的使用，地磁传感器除了检测地磁场强度外，还能当作指南针确定方向，同时也是航姿参考系统(AHRS)的重要组成部分。micro:bit主板采用的是LSM303AGR地磁传感器，LSM303AGR包括支持标准、快速模式、快速模式plus和高速(100 kHz、400 kHz、1 MHz和3.4 MHz)的I2C串行总线接口和SPI串行标准接口与外部通信，磁场动态范围为±50 gauss。在micro:bit主板中，磁力检测、指南针积木块均用到了磁力计模块，本实验中，将先介绍指南针，然后查看磁力计原始数据。常见的指南针主要部件是一根磁针，在地磁场的作用下可以转动并指向地磁北极（地理南极附近），用来辨别方向。
+This project aims to explain the use of the Micro: bit geomagnetic sensor, which can not only detect the strength of the geomagnetic field, but it can be used as a compass to determine directions. It is also an important part of the Attitude and Heading Reference System (AHRS).
 
-**注意：micro:bit主板内部的地磁传感器（磁力计、指南针），我们可以通过读取这个磁力计的读数来判断方位，得到相对于北磁极的数值，返回值是0到360之间的数值。在磁力计首次开始工作（带到新位置后）时系统会自动要求我们对micro:bit主板校准，正确的校准方式是旋转micro:bit主板。需要注意的是，附近要是有金属物件可能会影响读数和校准准确性。**
+Micro: Bit main board uses LSM303AGR geomagnetic sensor, which supports standard, fast mode, fast mode plus and high-speed (100 kHz, 400 kHz, 1 MHz and 3.4 MHz) I2C serial bus interface and SPI serial standard interface for external communications, and the magnetic field dynamic range is ±50 gauss. In the board, the magnetometer module is used in both magnetic detection and compass.
 
-#### 2.所需组件:
+In this experiment, the compass will be introduced first, and then the original data of the magnetometer will be checked. The main component of a common compass is a magnetic needle, which can rotate and point to the magnetic north pole under the influence of the geomagnetic field. (which is near the geographic South Pole) to determine directions.
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+**Attention: this geomagnetic sensor built in the board can help us determine directions by showing readings in the value from 0 to 360. And we need to calibrate it for the first by rotating it. Please note that metal materials around may attenuate the accuracy of the reading  and calibration.**
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+#### 2.Components:
+
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
+
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.
 
 ![img](./media/z3.png)
 
@@ -818,9 +863,9 @@ CoolTerm的串口监视器显示当前环境中的温度值变化，如下图：
 
 
 
-#### 4.示例代码:
+#### 4.Test Code:
 
-寻找指令方块：
+**Find code blocks:**
 
 ![img](./media/k49.png)
 
@@ -834,34 +879,36 @@ CoolTerm的串口监视器显示当前环境中的温度值变化，如下图：
 
 ------
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k52.png)
 
 ------
 
-代码说明：首先必须对micro:bit主板进行校准，因为每个地方地磁场不同，对结果有比较大的的影响，如果是第一次使用指南针，micro:bit主板会自动提示需要校准。
+Note: It is imperative to calibrate the Micro:bit board for different geomagnetic fields exist in different places. And the board requires a calibration for the first using time.
 
-#### 5.实验现象1：
-按照之前的方式将示例代码1下载至micro: bit主板，micro USB数据线不要拔下来，利用micro USB数据线上电，按下micro:bit主板上正面按键A时，micro:bit主板首先提示校准，屏幕(LED点阵)提示:“TILT TO FILL SCREEN”,然后进入校准界面，校准方式为：旋转micro:bit主板，使得屏幕(LED点阵)画一个封闭的正方形（25个LED都点亮），如下图所示：
+#### 5.Test Result 1：
+Upload code 1 and keep USB cable connected. Press button A and LED dot matrix prompts“TILT TO FILL SCREEN”. After tilt Micro:bit board for calibration, 25 LEDs will light up, as shown below: 
 
 ![img](./media/k53.png)
 
-当封闭的正方形画好后，会显示一个“笑脸”图案![img](./media/k54.png)，表示校准完成。
-校准完成后，按下按键A的时候，直接在屏幕上显示磁力计的读数，北、东、南、西对应0°、90°、180°、270°。   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+A smile icon![img](./media/k54.png)will appear after completing calibration. Press button A, and the detected magnetometer value will show. And the direction north, east, south and west corresponds to 0°, 90°, 180° and  270° respectively.
 
-#### 6.示例代码2:
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+
+#### 6.Test Code 2:
 
 ![img](./media/k55.png)
 
-这个模块意思是，在循环中，不断读取磁力计的读数，并根据读数范围判断所指方向，让箭头指向当前的地磁北极。
+This code is able to maintain the reading for direction distinguishing, and the sign finally points to the current magnetic north pole.
 
 ![img](./media/k56.png)
 
-如图所示，如果读数在292.5和337.5之间，就让显示屏显示一个指向右上方的箭头，由于代码里不能输入0.5，所以取的判断数值是293和338。之后再加入其它逻辑判断条件，就得到了完整的代码。
-也可以自己通过拖动代码块来编写项目代码，如下：
+If the value is between 292.5 and 337.5, as shown above, LED dot matrix shows a sign pointing up to the upper right. 0.5 can’t be input in the code, so the values we get are 293 and 338. Now we add other logical judgment conditions to complete this program. 
 
-寻找指令方块：
+You can upload the code directly from the tutorial. Or add the code blocks manually:
+
+**Find code blocks:**
 
 ![img](./media/k57.png)
 
@@ -883,7 +930,7 @@ CoolTerm的串口监视器显示当前环境中的温度值变化，如下图：
 
 ------
 
- 组合指令方块：
+ **Find code blocks:**
 
  ![img](./media/k62.png)
 
@@ -891,33 +938,37 @@ CoolTerm的串口监视器显示当前环境中的温度值变化，如下图：
 
  ![img](./media/k64.png)
 
-#### 7.实验现象2:
-按照之前的方式将示例代码2下载到micro:bit主板，利用micro USB数据线上电，提示校准（校准方法请参考:上面示例代码1部分），校准完成后，旋转micro:bit主板，可以看到micro:bit主板上LED点阵显示方向图案。    [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+#### 7.Test Result 2:
+Upload code 2 and keep USB cable connected. After calibration, tilt the Micro:bit board, the LED dot matrix displays the direction signs. 
+
+​    [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
 
 
- ### Project 7: 加速度传感器
+ ### Project 7: Accelerometer
 
 ![img](./media/k65.png)
 
-#### 1.实验介绍:
-micro:bit主板内置有LSM303AGR加速度传感器（加速度计），LSM303AGR包括支持标准、快速模式、快速模式plus和高速(100 kHz、400 kHz、1 MHz和3.4 MHz)的I2C串行总线接口和SPI串行标准接口与外部通信，8/10/12 bits的分辨率，可设置量程为±2g、±4g,、±8g。
-当micro:bit主板处于静止或匀速运动状态时，加速度计仅检测到重力加速度；将micro:bit主板轻微甩动，加速度计检测到甩动的加速度远小于重力加速度，可忽略不计。因此，在使用micro:bit主板过程中，主要是检测当姿态变化时，重力加速度在x、y、z轴上的变化。
-在本实验项目中，将介绍加速度传感器（加速度计）对几个特殊姿态的检测，之后来查看加速度传感器输出的三轴原始数据。
+#### 1.Introduction:
+The Micro: bit main board boasts a built-in LSM303AGR acceleration sensor  (accelerometer) which includes standard, fast, plus and high-speed mode  (100 kHz, 400 kHz, 1 MHz and 3.4 MHz) of I2C serial bus interface and SPI serial standard interface for external communication, with a resolution of 8/10/12 bits and range of ±2g, ±4g, or ±8g.
 
-#### 2.所需组件:
+When the micro:bit board is at rest or in uniform motion, the  accelerometer only detects the acceleration of gravity. If the board is slightly swung, the detected acceleration is much less than the that of gravity, but the difference can be ignored. Therefore, we mainly detect the change of gravitational acceleration on the x, y, and z axes.
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+In this project, we will introduce how to measure the position of the board with the accelerometer. And then we will have a look at the original three-axis value output by the accelerometer.
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+#### 2.Components:
+
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
+
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.
 
 ![img](./media/z3.png)
 
-#### 4.示例代码:
+#### 4.Test Code:
 
-寻找指令方块：
+**Find code blocks:**
 
 ![img](./media/k66.png)
 
@@ -931,7 +982,7 @@ micro:bit主板内置有LSM303AGR加速度传感器（加速度计），LSM303AG
 
 ------
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k69.png)
 
@@ -939,45 +990,50 @@ micro:bit主板内置有LSM303AGR加速度传感器（加速度计），LSM303AG
 
 
 
-#### 5.实验现象1:
-按照之前的方式将示例代码1下载到micro:bit主板，利用micro USB数据线上电，将micro:bit主板晃动，则可见LED点阵显示数字1（表明只要有晃动，无论朝哪个方向晃动，该条件都将满足）。    [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
-当micro:bit主板的Logo朝上时，LED点阵显示数字2，Logo朝上示意图如下所示：
+#### 5.Test Result 1:
+After uploading code 1 and powering on, if we shake the Micro:Bit board(any direction), the LED dot matrix displays the digit “1”.
+
+  [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+When the logo is kept above, number 2 will be displayed.
 
 ![img](./media/k70.png)
 
 ------
 
-同理，micro:bit主板的Logo朝上时，LED点阵显示数字3(倒立的3)，Logo朝下示意图如下所示：
+When it is kept upside down(logo below the LED dot matrix), number 3 will be displayed.
 
 ![img](./media/k71.png)
 
 ------
 
-当屏幕朝上（指的是LED点阵朝上）时，LED点阵显示数字4。如下图所示：
+When the logo is kept above, number 4 will be displayed.
 
 ![img](./media/k72.png)
 
 ------
 
-同理，当屏幕朝下（指的是LED点阵朝下）时，LED点阵显示数字5。
-当micro:bit主板向左倾斜（是指LED点阵先朝上，然后再往左边倾斜）时，LED点阵显示数字6。如下图所示：
+When it is covered on the desk, the number 5 exhibits.
+When the board is tilted to the left , the LED dot matrix shows the number 6 as shown below.
 
 ![img](./media/k73.png)
 
 ------
 
-同理，当micro:bit主板向右倾斜（是指LED点阵先朝上，然后再往右边倾斜）时，LED点阵显示数字7。如下图所示：
+When the board is tilted to the right , the LED dot matrix displays the number 7 as shown below:
 
 ![img](./media/k74.png)
 
 ------
 
-当不小心碰到micro:bit主板使其从桌面掉落，则为做自由落体运动，此时，micro:bit主板满足自由落体的条件，则LED点阵显示数字8。（注意：此方法操作时，很容易把micro:bit主板摔坏，不建议操作）
-注意：（3g、6g、8g， 如果需要满足此条件，则需要达到3倍，6倍，8倍重力加速度甩动micro:bit主板。如果你们有兴趣的话，这部分代码可以自己添加）
+When the board falls down to the floor(a free fall), the LED dot matrix shows the number 8. (Please note that this test is not recommended for it may damage the main board.)
 
-#### 6.示例代码2：
+If you’d like to try this function, you can also set the acceleration to 3g, 6g or 8g. But we do not recommend it.
 
-寻找指令方块：
+
+
+#### 6.Test Code 2：
+
+**Find code blocks:**
 
 ![img](./media/k75.png)
 
@@ -991,7 +1047,7 @@ micro:bit主板内置有LSM303AGR加速度传感器（加速度计），LSM303AG
 
 ------
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k78.png)
 
@@ -999,45 +1055,48 @@ micro:bit主板内置有LSM303AGR加速度传感器（加速度计），LSM303AG
 
 
 
-#### 7.实验现象2：
-按照之前的方式将示例代码2下载到micro:bit主板，利用micro USB数据线上电，点击“显示控制台(设备)”按钮：  [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+#### 7.Test Result 2：
+Upload test code 2 to micro:bit main board, power on via the USB cable, and click “Show console Device”.
+
+  [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
 
 ![img](./media/k79.png)
 
-首先，查阅MMA8653FC数据手册，以及micro:bit主板的硬件原理图得知，micro:bit主板的加速度计坐标如下图所示：
+After referring to the MMA8653FC data manual and the hardware schematic diagram, the accelerometer coordinate of the Micro: Bit are shown in the figure below:
 
 ![img](./media/k80.png)
 
-显示出如下界面：分别显示了加速度在X轴，Y轴，Z轴的分解值，以及加速度的合成(重力加速度及其它外力作用的加速度合成): 
+The following interface shows the decomposition value of acceleration in X axis, Y axis and Z axis respectively, as well as acceleration synthesis (acceleration synthesis of gravity and other external forces).
 
 ![img](./media/k81.png)
 
-如果你的电脑系统是Windows7/8而不是Windows 10，则在Google Chrome中是无法进行设备配对，这里需要使用CoolTerm软件来读取串口数字的。
-打开CoolTerm，点击Options，选择SerialPort，设置COM口和波特率，波特率设置为115200（经过测试，micro:bit主板的USB串口通讯波特率是115200），点击OK后，最后点击Connect。CoolTerm串口监视器分别显示了加速度在X轴、Y轴、Z轴的分解，以及加速度的合成(重力加速度及其它外力作用的加速度合成)，可得数据变化如下图：
+If you’re running Windows 7 or 8 instead of Windows 10, via Google  Chrome won’t be able to match devices. You’ll need to use the CoolTerm serial monitor to read value.
+
+Open CoolTerm and click **Options** to select **SerialPort**, and set COM port and baud rate to 115200. Click **OK** and **Connect**. The CoolTerm serial monitor shows the data of X axis, Y axis and Z axis , as shown in the figures below :
 
 ![img](./media/k82.png)
 
-### Project 8: 光照强度检测
+### Project 8: Light Intensity
 
 ![img](./media/k83.png)
 
-#### 1.实验介绍:
-本实验项目将介绍micro:bit主板对外界光照强度的检测，由于micro:bit主板并不自带光敏传感器，对外界光照强度的检测是通过micro:bit主板上的LED点阵屏进行的，LED点阵被用来感知周围的光，并反复地将LED转换成输入，并采样电压衰减时间，这样检测出来的光照强度是一个相对值。（注意：将光线亮度级别输出至串口，输出的是一个相对值。）
+#### 1.Introduction:
+In this experiment, we will use the micro:bit board to detect light intensity. Since the micro:bit board does not contain its own photoresistor, the LED dot matrix will shoulder this job. The light signal will convert into input, and the voltage decay time is sampled so that the detected light intensity is a relative value.
 
-#### 2.所需组件:
+#### 2.Components:
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.
 
 ![img](./media/z3.png)
 
-#### 4.示例代码:
+#### 4.Test Code:
 
-寻找指令方块：
+**Find code blocks:**
 
 ![img](./media/k84.png)
 
@@ -1055,7 +1114,7 @@ micro:bit主板内置有LSM303AGR加速度传感器（加速度计），LSM303AG
 
 ------
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k88.png)
 
@@ -1063,43 +1122,46 @@ micro:bit主板内置有LSM303AGR加速度传感器（加速度计），LSM303AG
 
 
 
-#### 5.实验现象:
-按照之前的方式将示例代码下载到micro:bit主板，利用micro USB数据线上电，点击“显示控制台(设备)”按钮：   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+#### 5.Test Result:
+Upload test code to micro:bit main board, power on via the USB cable, and click “Show console Device”.
+
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
 
 ![img](./media/k89.png)
 
-显示串口输出数据，用手全部遮住micro:bit 主板的LED点阵，光线亮度级别约为0；然后将micro:bit主板的LED点阵放置于光照下，随着光照强度增强，亮度级别值也在逐渐增大。如下图所示：
+When the LED dot matrix is covered by hand, the light intensity is approximately 0; when the LED dot matrix is exposed to light, the light intensity gets stronger with the light as shown below:
 
 ![img](./media/k90.png)
 
-代码中的20是一个随意设置的光照强度级别值，如果当前光照强度级别小于等于20，月亮就会出现在micro:bit主板的LED点阵上。如果大于20时，太阳就会出现。
-如果你的电脑系统是Windows7/8而不是Windows 10，则在Google Chrome中是无法进行设备配对，这里需要使用CoolTerm软件来读取串口数字的。
-打开CoolTerm，点击Options，选择SerialPort，设置COM口和波特率，波特率设置为115200（经过测试，micro:bit主板的USB串口通讯波特率是115200），点击OK后，最后点击Connect。这样，CoolTerm串口监视器显示光线亮度级别值。
+20 in the code is an arbitrary value of light intensity. If the  current light value is less than or equal to 20, the icon moon will appear on the LED dot matrix. If it’s greater than 20, the sun will appear.
+
+If you’re running Windows 7 or 8 instead of Windows 10, Google Chrome won’t be able to match devices. CoolTerm will be required.
+
+Open CoolTerm and click **Options** to select **SerialPort**, and set COM port and baud rate to 115200, click **OK** and **Connect**. The CoolTerm serial monitor shows the value of light intensity, as shown below:
 
 ![img](./media/k91.png)
 
-### Project 9: 扬声器
+### Project 9: Speaker
 
 ![img](./media/k92.png)
 
-#### 1.实验介绍：
-micro:bit主板有内置扬声器，这使得在你的项目中添加声音变得非常容易。任何micro:bit主板都可以与扬声器一起工作创作声音项目，但有了新款的micro:bit主板，你也可以用一些新的声音来表达自己：让你的micro:bit主板的扬声器发出咯咯笑，问候你，或者让你知道它在打哈欠或悲伤等等。你也可以编写一首歌曲，你的micro:bit主板可以通过编程制作各种各样的声音——从单个音符、音调和节拍到你自己的音乐作品，例如：歌曲《欢乐颂》，让扬声器播放出来。
-你也可以关闭micro:bit主板内置的扬声器，声音仍然会从引脚出来，所以你仍然可以享受连接在GND和P0的耳机播放出的优美音乐，在MakeCode中，则需要使用“关闭内置扬声器”的音乐块关闭micro:bit主板内置的扬声器。
+#### 1.Introduction：
+Micro: Bit board boasts an built-in speaker, which makes sound to the programs easier. It is also able to make sound such as utter giggles,  greetings and yawning as well as all kinds of tones, like playing the song *Ode to Joy*.
 
-#### 2.所需组件:
+You can also turn off the built-in speaker to enjoy the beautiful music via headphones connected to GND and P0. In MakeCode, you need to turn off the speaker by “Turn off built-in speakers” block.
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+#### 2.Components:
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
 
-![img](./media/z3.png)
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.![img](./media/z3.png)
 
-#### 4.示例代码:
+#### 4.Test Code:
 
-寻找指令方块：
+**Find code blocks:**
 
 ![img](./media/k93.png)
 
@@ -1113,7 +1175,7 @@ micro:bit主板有内置扬声器，这使得在你的项目中添加声音变�
 
 ------
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k96.png)
 
@@ -1121,12 +1183,14 @@ micro:bit主板有内置扬声器，这使得在你的项目中添加声音变�
 
 
 
-#### 5.实验现象1: 
-按照之前的方式将示例代码1下载到micro:bit主板，利用micro USB数据线上电，micro:bit主板上的扬声器发出声音且LED点阵显示音乐标志图案。  [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+#### 5.Test Result 1: 
+After uploading code 1 and powering on, the speaker utters sound and the LED dot matrix shows the logo of music.
 
-#### 6.示例代码2:
+  [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
 
-寻找指令方块：
+#### 6.Test Code 2:
+
+**Find code blocks:**
 
 ![img](./media/k97.png)
 
@@ -1140,7 +1204,7 @@ micro:bit主板有内置扬声器，这使得在你的项目中添加声音变�
 
 ------
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k100.png)
 
@@ -1154,33 +1218,33 @@ micro:bit主板有内置扬声器，这使得在你的项目中添加声音变�
 
 ![img](./media/k105.png)
 
-歌曲《欢乐颂》的简谱如下：
+*Ode to Joy*:
 
 ![img](./media/k106.png)
 
-更多音乐简谱知识的相关链接：<https://en.wikipedia.org/wiki/Numbered_musical_notation>
+For more information about musical notations：<https://en.wikipedia.org/wiki/Numbered_musical_notation>
 
-### Project 10: 触摸感应logo
+### Project 10: Touch-sensitive Logo
 
 ![img](./media/k107.png)
 
-#### 1.实验介绍：
-如果你有了新款的micro:bit主板，你可以在你的项目中使用金色的触摸感应logo作为另一个输入，这就像多了一个按钮。触摸感应采用的是电容式触摸传感器，当你手指按下（或触摸）它时，它就能感应到电场的微小变化----就像你的手机或平板电脑屏幕一样。当你像按按钮一样按下它时，你可以在程序中触发事件。
+#### 1. Introduction：
+The Micro: bit main board is equipped with a golden touch-sensitive logo, which can act as a button. This capacitive touch sensor senses small changes in the electric field when it is pressed or touched.
 
-#### 2.所需组件:
+#### 2.Components:
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.
 
 ![img](./media/z3.png)
 
-#### 4.示例代码:
+#### 4.Test Code:
 
-寻找指令方块：
+**Find code blocks:**
 
 ![img](./media/k108.png)
 
@@ -1206,36 +1270,39 @@ micro:bit主板有内置扬声器，这使得在你的项目中添加声音变�
 
 ------
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k114.png)
 
-------
 
-5.实验现象:
-按照之前的方式将示例代码下载到micro:bit主板，利用micro USB数据线上电，手指按住micro:bit主板上“Logo”标志处，micro:bit主板上的LED点阵显示“❤”图案；手指松开micro:bit主板上“Logo”标志处，会出现数字，手指按得时间越久在松开，出现的数字越大。   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
 
-### Project 11: 麦克风
+#### 5.Test Result:
+
+After uploading the code and powering on, the LED dot matrix exhibits the heart pattern “❤” when the logo is pressed, and it displays digit when the logo is released. The longer it is pressed, the greater the number is when it is released.
+
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+
+### Project 11: Microphone
 
 ![img](./media/k115.png)
 
-#### 1.实验介绍：
-micro:bit主板有一个内置麦克风，它可以对嘈杂和安静的声音做出反应，也可以测量环境的嘈杂程度。你可以使用它作为一个简单的输入---当你鼓掌时，micro:bit主板上前面内置麦克风LED指示灯会被打开。它还可以测量声音的强度，所以你可以制作一个噪音等级表或与音乐合拍的迪斯科灯光。麦克风是在新款的micro:bit主板的背面，而在前面，你会发现一个内置麦克风LED指示灯，还有紧挨着让声音进入麦克风的孔。当你的micro:bit主板在测量声音级别时，它就会亮起来。
+#### 1.Introduction：
+The Micro:bit mainboard is built with a microphone, which can test the volume of ambient environment. When you clap, the microphone LED indicator turns on. So, you can make a disco lighting changing with music. The microphone is placed on the opposite side, and an LED  indicator is next to the hole that lets sound pass. When the board detects sound, the LED indicator lights up.
 
-#### 2.所需组件:
+#### 2.Components:
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.
 
 ![img](./media/z3.png)
 
-#### 4.示例代码:
+#### 4.Test Code:
 
-寻找指令方块：
+**Find code blocks:**
 
 ![img](./media/k116.png)
 
@@ -1245,16 +1312,18 @@ micro:bit主板有一个内置麦克风，它可以对嘈杂和安静的声音�
 
 ------
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k118.png)
 
-#### 5.实验现象1：
-按照之前的方式将示例代码1下载到micro:bit主板，利用micro USB数据线上电，当你鼓掌时，micro:bit主板上的LED点阵显示“❤”图案；当外界环境安静时，micro:bit主板上的LED点阵显示“”图案。   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+#### 5.Test Result 1：
+After uploading test code 1 to micro:bit main board and powering on via the USB cable, the LED dot matrix displays “❤” when you clap, and ![img](media/zzz.png) appears when it is quiet around.
 
-#### 6.示例代码2:
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
 
-寻找指令方块：
+#### 6.Test Code 2:
+
+**Find code blocks:**
 
 ![img](./media/k119.png)
 
@@ -1278,7 +1347,7 @@ micro:bit主板有一个内置麦克风，它可以对嘈杂和安静的声音�
 
 ![img](./media/k125.png)
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k126.png)
 
@@ -1286,36 +1355,40 @@ micro:bit主板有一个内置麦克风，它可以对嘈杂和安静的声音�
 
 
 
-#### 7.实验现象2：
-按照之前的方式将示例代码2下载到micro:bit主板，利用micro USB数据线上电，点击“显示控制台(设备)”按钮：   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+#### 7.Test Result 2：
+Upload test code 2 and power on and click “Show console Device” as shown below:
+
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
 
 ![img](./media/k127.png)
 
-显示串口输出数据，当外界环境的声音增大时，串口输出的声音级别值也增大，如下图所示：
+The louder the sound is, the greater the sound value will show on the serial monitor:
 
 ![img](./media/k128.png)
 
-并且，当你按下micro:bit主板上的A键时，micro:bit主板上的LED点阵显示检测到的此时环境中最大声音级别值（这里需要注意：通过按micro:bit背面的重置按钮重置最大值。）；当鼓掌时，LED点阵显示声音级别大小图案。
+When the button A is pressed, the LED dot matrix displays the value of the biggest volume. Please note that the biggest volume can be reset via the Reset button. When you clap, the LED dot matrix shows the pattern of the sound.
 
-### Project 12: 触摸Logo控制扬声器
+### Project 12: Touch-sensitive Logo Controls Speaker
 
-#### 1.实验介绍:
-前面的实验项目中已经学习过microbit板上的金色logo工作原理及控制方法和扬声器发生的原理。在本项目中，我们将金色logo和扬声器相结合，通过触摸金色logo，扬声器播放音乐。
+#### 1. Introduction:
+In the previous projects, we have learned about the touch-sensitive logo and the speaker respectively.
 
-#### 2.所需组件:
+In the project, we will combine these two components to play music. We will apply the Logo to control the speaker to sing songs.
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+#### 2.Components:
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
+
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.
 
 ![img](./media/z3.png)
 
-#### 4.示例代码:
+#### 4.Test Code:
 
-寻找指令方块：
+**Find code blocks:**
 
 ![img](./media/k129.png)
 
@@ -1337,7 +1410,7 @@ micro:bit主板有一个内置麦克风，它可以对嘈杂和安静的声音�
 
 ------
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k134.png)
 
@@ -1345,29 +1418,31 @@ micro:bit主板有一个内置麦克风，它可以对嘈杂和安静的声音�
 
 
 
-#### 5.实验现象：
-按照之前的方式将示例代码下载到micro:bit主板，利用micro USB数据线上电，当手触摸金色Logo时，micro:bit主板上的扬声器一首“生日歌”。   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+#### 5.Test Result：
+After uploading test code to micro:bit main board and powering on via the USB cable, the speaker plays a *Birthday Song* when the logo is touched.
+
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
 
 
-### Project 13: 躲子弹游戏
+### Project 13: Dodge Bullets
 
-#### 1.实验介绍:
-前面的实验项目中已经学习过micro:bit主板上按键的工作原理及控制方法，在本项目中，将继续学习按键的控制方法，按键A和B与LED点阵屏相结合，使用按键A和B设计躲子弹游戏。
+#### 1.Introduction:
+We have learned about the two programmable buttons: button A and B. In  this project, we will combine them with LED dot matrix to design a game: Dodge Bullets.
 
-#### 2.所需组件:
+#### 2.Components:
 
-| Micro:bit主板*1 | ![img](./media/z1.png) |
-| --------------- | ---------------------- |
-| Micro USB 线*1  | ![img](./media/z2.png) |
+| Micro:bit Mainboard*1 | ![img](./media/z1.png) |
+| --------------------- | ---------------------- |
+| Micro USB Cable*1     | ![img](./media/z2.png) |
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.
 
 ![img](./media/z3.png)
 
-#### 4.示例代码:
+#### 4.Test Code:
 
-寻找指令方块：
+**Find code blocks:**
 
 ![img](./media/k135.png)
 
@@ -1401,7 +1476,7 @@ micro:bit主板有一个内置麦克风，它可以对嘈杂和安静的声音�
 
 ------
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k143.png)
 
@@ -1413,15 +1488,17 @@ micro:bit主板有一个内置麦克风，它可以对嘈杂和安静的声音�
 
 
 
-#### 6.实验现象1：
-按照之前的方式将示例代码1下载到micro:bit主板，这样，游戏开始，子弹从上面掉下来，按键A和B控制角色G左右移动躲避子弹，如果角色G没有躲过子弹，游戏结束。   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+#### 6.Test Result1：
+The game begins when the code 1 is uploaded to the main board. The bullets fall off and we need to control the role G by Button A and B to shun them. If the role fails to avert the attacks, game is over.
 
-#### 7.游戏玩法2：
-在游戏玩法1中加入了得分，并且随着得分的增加，难度也会逐渐增加。当角色G每躲过一颗子弹，得分加1，当角色G遇到子弹时，游戏暂停，显示分数，再结束游戏。然后同时按下按键A和B，游戏又重新开始。
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
 
-#### 8.示例代码2：
+#### 7.Game 2：
+Dodge bullets! Earn points!
 
-寻找指令方块：
+#### 8.Test Code 2：
+
+**Find code blocks:**
 
 ![img](./media/k145.png)
 
@@ -1463,7 +1540,7 @@ micro:bit主板有一个内置麦克风，它可以对嘈杂和安静的声音�
 
 ------
 
-组合指令方块：
+**Build blocks:**
 
 ![img](./media/k155.png)
 
@@ -1483,31 +1560,39 @@ micro:bit主板有一个内置麦克风，它可以对嘈杂和安静的声音�
 
 
 
-#### 9.实验现象2：
-按照以前的方式将示例代码2下载到micro:bit主板，这样，游戏开始，子弹从上面掉下来，按键A和B控制角色G左右移动躲避子弹，当角色G每躲过一颗子弹，得分加1，当角色G遇到子弹时，游戏暂停，显示分数，再结束游戏。   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+#### 9.Test Result 2：
+The game begins when the code 2 is uploaded to the main board. The  bullets fall off and we control the role G by Button A and B to shun them. 1 score will be tallied for each successful dodging. If the role fails to avert the attacks, the game is over and scores will be displayed.
 
-### Project 14: micro:bit的蓝牙无线通信
+   [How to download?  How to quick download?](#3.1.3Step 3: 下载代码：) 
+
+### Project 14: Bluetooth Wireless Communication
 
 ![img](./media/k159.png)
 
-1.实验介绍：
-micro:bit主板自带了nRF52833处理器（内置蓝牙5.1低功耗的BLE(Bluetooth Low Energy)设备）以及2.4GHz天线，可进行蓝牙无线通信和2.4GHz无线通信。使得micro:bit主板可以与各种蓝牙设备进行通信，包括智能手机和平板电脑。
-在本实验中，主要讲解micro:bit主板实现蓝牙无线通信功能，我们可以通过连接蓝牙，实现无线传输代码（信号）功能。我们利用一个苹果系统设备（手机/iPad）和micro:bit主板连接，实现无线传输功能。设置安卓系统手机实现无线传输方法和苹果系统设备（手机/iPad）类似，这里就不一一介绍了。
+#### 1.Introduction:
+The Micro:bit main board comes with a nRF52833 processor with a built-in BLE(Bluetooth Low Energy) Bluetooth 5.1 device and a 2.4GHz antenna for Bluetooth wireless communication, so that the board is able to communicate with a variety of Bluetooth devices, including smart phones and tablets.
 
-#### 2.所需组件:
+In this project, we mainly concentrate on the Bluetooth wireless communication to transmit code or signals. Firstly, we should connect a device (a phone or an iPad) to the board.
 
-| Micro:bit主板*1 | ![img](./media/z1.png)   |
-| --------------- | ------------------------ |
-| Micro USB 线*1  | ![img](./media/z2.png)   |
-| 智能手机/IPad*1 | ![img](./media/k160.png) |
+#### 2.Components:
 
-#### 3.实验接线:
-通过micro USB线将micro:bit主板连接到你的电脑上。
+| Micro:bit Mainboard*1 | ![img](./media/z1.png)   |
+| --------------------- | ------------------------ |
+| Micro USB Cable*1     | ![img](./media/z2.png)   |
+| Smart Phone/IPad*1    | ![img](./media/k160.png) |
+
+#### 3.Connection:
+Connect the board to your computer via micro USB cable.
 
 ![img](./media/z3.png)
 
-#### 4.实验步骤：
-1. 如果你的智能手机/iPad是苹果系统的，需要先在电脑上进入网页<https://www.microbit.org/get-started/user-guide/ble-ios/> ，点击“Download pairing HEX file”下载micro:bit的固件到创建的文件夹中或电脑桌面上，并将下载好的micro:bit固件烧入micro:bit主板中。（这一步只针对于苹果系统的智能手机/iPad，安卓系统智能手机/不需要这一步）
+#### 4.Procedures：
+
+We will demonstrate on iPhone/iPad/MAC devices. Android/Windows devices may take these as a reference.
+
+1. iOS/MAC: <https://www.microbit.org/get-started/user-guide/ble-ios/> 
+
+   Click “Download pairing HEX file” to download the Micro: Bit firmware and upload the downloaded firmware to the Micro: Bit main board(iOS/MAC only).
 
 ![img](./media/k161.png)
 
@@ -1523,24 +1608,24 @@ micro:bit主板自带了nRF52833处理器（内置蓝牙5.1低功耗的BLE(Bluet
 
 
 
-2. 在苹果系统设备（手机/iPad）上打开App Store![img](./media/k164.png)，在App Store的搜索框中输入“micro bit”，然后选中micro:bit 选项，会出现下载界面（如下图所示：），点击“![img](./media/k165.png)”，就可以下载安装对应的APP。
+2. Open App Store![img](./media/k164.png)and search “micro bit” and click “![img](./media/k165.png)”to download the APP.
 
 ![img](./media/k166.png)
 
-3. 苹果系统设备（手机/iPad）和micro:bit主板配对连接。
-  - 打开苹果系统设备（手机/iPad）上的蓝牙。
+3. Connect your Apple device with Micro: Bit main board.
+  - Turn on Bluetooth on the device.
 
-  - APP安装成功后，点击![img](./media/k167.png)打开APP，先确定micro USB数据线已经将micro:bit主板和电脑连接上，再点击APP的第一项“Choose micro:bit”，开始配对蓝牙。
+  - Open ![k167](media/zz99.png) APP, ensure the board is connected to the device and select “Choose micro:bit”to start pairing Bluetooth.
+    
+    
     
     ![img](./media/k168.png)
     
-  - 点击配对一个新的micro:bit，开始配对。
+  - Pair a new micro:bit.
     
     ![img](./media/k169.png)
     
-  - 根据提示，首先同时按住micro:bit主板上的按键A和B，然后按下micro:bit主板后面的复位&电源按钮几秒钟（按键A和B不能松开），再松开复位&电源按钮，micro:bit主板上LED点阵会显示一个密码图案。最后松开micro：bit主板上的按键A和B，接着点击“下一步”。
-
-  
+  - Following the instructions to press button A and B at the same time(do not release them until you are told to) and press Reset & Power button for a few seconds. Release the Reset & Power button, you will see a password pattern shows on the LED dot matrix. Now , release buttons A and B and click “Next”.
 
 ![img](./media/k170.png)
 
@@ -1548,13 +1633,11 @@ micro:bit主板自带了nRF52833处理器（内置蓝牙5.1低功耗的BLE(Bluet
 
 ![img](./media/k171.png)
 
-  - 在苹果系统手机/iPad上设置密码图案，使图案和micro:bit主板上显示的密码图案一样，点击“下一步”。
-
-  
+  - Set the password pattern on your Apple device as the same pattern will be showed on the matrix and click “Next”.
 
 ![img](./media/k172.png)
 
-  - 点击“下一步”，出现对话框，在对话框中点击“Pair”。几秒钟后，配对成功，同时micro:bit主板上的LED点阵显示“√”图案。
+  - Still click “Next”and a dialog box props up as shown below. Then click  “Pair”. A few seconds later, the match is done and the LED dot matrix  displays the “√” pattern.
 
     
 
@@ -1566,9 +1649,9 @@ micro:bit主板自带了nRF52833处理器（内置蓝牙5.1低功耗的BLE(Bluet
 
     ![img](./media/k176.png)
 
-  -  蓝牙配对成功后，开始利用APP编写代码，并上传代码。
+  -  After the match with Bluetooth, write and upload code with the App.
 
-     1. 点击第二项“Create Code”，进入编程界面，开始编写代码程序。（点击![img](img/177.png)，出现对话框![img](./media/k178.png)，在对话框中直接点击“Create √”后就进入编程界面)
+     1. Click “Create Code” to enter the programming page and write code.（Click ![image-20240416092353338](media/image-20240416092353338.png)) and you will see![img](./media/k178.png)，and then select “Create √”.)
      
         ![img](./media/k179.png)
      
@@ -1578,11 +1661,11 @@ micro:bit主板自带了nRF52833处理器（内置蓝牙5.1低功耗的BLE(Bluet
      
         ![img](./media/k182.png)
      
-     2. 将代码程序项目名称设置为“1”，点击保存图案“![img](./media/k183.png)”，保存代码程序。
+     2. Name the project as “1 “and click ![img](./media/k183.png)to save the code.
      
          ![img](./media/k184.png)
      
-     3. 项目代码程序保存成功后，点击第三项“Flash”进入上传代码程序界面。默认选择代码程序是刚刚保存的项目名称为“1”的代码程序，然后点击“Flash”上传代码程序“1”.
+     3. Click “Flash” to enter the uploading page. The default code program for uploading is the one saved just now and  named “1” and then click “Flash” to upload the code program “1”.
      
         ![img](./media/k185.png)
      
@@ -1590,7 +1673,7 @@ micro:bit主板自带了nRF52833处理器（内置蓝牙5.1低功耗的BLE(Bluet
      
         ![img](./media/k187.png)
      
-     4. 几秒钟后，代码程序“1”上传成功，会显示如下图。然后micro:bit主板上的LED点阵显示跳跃的“心”对应图案。
+     4. If the program “1” is uploaded successfully a few seconds later, the App will show as below and the LED dot matrix will display a heart pattern.
      
         ![img](./media/k188.png)
 
@@ -1599,115 +1682,122 @@ micro:bit主板自带了nRF52833处理器（内置蓝牙5.1低功耗的BLE(Bluet
 
 ------
 
-## 5.故障排除
+## 5.Troubleshooting
 
-### 5.1关于Microbit无法下载程序
+### 5.1 Code fails to download to Micro:bit
 
-关于Microbit无法下载程序，盘符显示MAINTENANCE的解决方法
+**Problem：** Recently, many users encounter the issue that Micro:bit board doesn’t respond when downloading code.
 
-**问题现象：**
-很多新用户最近遇到，刚买到的Micro:bit插上Micro USB线连接到电脑上，点击下载，下载不进去，Micro:bit没有反应。
-如果用户的软件操作没有问题的话，可能是自己不小心按着Micro:bit上的复位键进入了Micro:bit刷固件模式或者可能是自己的一些误操作导致Micro:bit丢失了固件。
-所谓的刷固件模式：插上Micro:bit，显示多了一个盘符“MAINTENANCE”，进入了刷固件模式后，是无法进行正常的程序下载的。
+If the way you operate is correct, maybe you accidentally press the reset button and enter the Maintenance mode or the firmware is lost due  to 
+
+faulty operation.
+
+Plug in Micro:bit board, the “MAINTENANCE” drive appears, which means the program can’t be downloaded.
 
 ![img](./media/k190.png)
 
-**解决办法：**
-1. 从此页面将十六进制文件下载到您的电脑。 
-    下载最新的micro:bit固件-0255的链接：https://www.microbit.org/get-started/user-guide/firmware/ 
-    （注意：你可以点击上述链接下载最新固件-0255十六进制文件；如果你不下载，在相应的文件夹中也有我们事前下载好的最新固件-0255十六进制文件）
-2. 按照下图操作，直接将下载好的最新固件-0255十六进制文件拖到“MAINTENANCE”，即可将Micro:bit恢复到正常模式。
+**Solution：**
+
+1. Download the **hex file** from this page to your computer.
+
+   Down load the latest micro:bit firmware-0255:https://www.microbit.org/get-started/user-guide/firmware/ If you do not want to download from this website, we also provide it in our tutorial.
+
+2. After the latest firmware is downloaded, then drag it into the “MAINTENANCE” to make Micro:bit back to normal mode.
+
+
 
 ![img](./media/k191.png)
 
-**如何避免进入“MAINTENANCE”：**
+**Avoid to Enter “MAINTENANCE”：**
 
-1. Micro:bit插入Micro USB线时，不要按着Micro:bit上的复位键，再插Micro USB线，
-      很多新手不小心就按着Micro:bit上的复位键插上Micro USB线就进入了刷固件模式（新手常犯的错误）
+1. Make sure the Reset button is **not** pressed when plugging the board by USB cable.
+  
 
       ![img](./media/k192.png)
-      
-2. 在micro:bit程序下载过程中，不要突然拔掉，这可能导致固件丢失，micro:bit就会进入刷固件模式了
-3. 在实验过程中，接线接错，导致短路，也有可能导致micro:bit固件丢失，新手操作一定要注意。
+
+2. Don’t unplug the cable suddenly during downloading micro:bit program, otherwise, the firmware will be lost and micro:bit will enter  “MAINTENANCE” mode. 
+3. In the experiment, wrong wiring also cause short circuit or losing  the firmware.      
 
 ------
 
 
 
-### 5.2使用 WebUSB 进行下载的故障排除
+### 5.2 Troubleshooting-Download with WebUSB
 
-Micro：bit与WebUSB（/ device / usb / webusb）配对时遇到问题？让我们尝试找出原因。
+#### 5.2.1Step 1: Check cable
 
-#### 6.2.1Step 1: 检查你的线
-
-确保使用micro USB线将micro：bit连接到电脑。 连接后，您应该会在Windows资源管理器中看到一个**MICROBIT** 驱动器。 
+Make sure that your micro:bit is connected to your computer with a micro USB cable. You will see a **MICROBIT** drive appear in Windows Explorer when it’s connected. 
 
 ![img](./media/k193.png)
 
-如果可以看到MICROBIT驱动器，请转到步骤2。如果看不到该驱动器，请执行以下操作：
+**If you can see the MICROBIT, please go to step 2**.
 
-- 确保micro USB线正常工作。micro USB线是否在另一台电脑上工作？如果不是，请查找其他micro USB线。 某些micro USB线可能仅提供电源连接，实际上并未传输数据。 在
+If not:
 
-- 电脑上尝试另一个USB端口。 电缆是否正常，但是您仍然看不到MICROBIT 驱动器？ 嗯，您的micro：bit可能有问题。尝试在microbit.org上的故障查找页面中（<https://support.microbit.org/support/solutions/articles/19000024000-fault-finding-with-a-micro-bit>）描述的其他步骤。如果这样做没有帮助，您可以创建支持通知单（<https://support.microbit.org/support/tickets/new>）将问题通知Micro：bit基金会。 跳过其余步骤。
+- Make sure that the USB cable is working. Does the cable work on another computer? If not, find a different cable to use. Some cables may only provide a power connection and don’t actually transfer data.
+- Try another USB port on your computer.
+- Is the cable good but you still can’t see the **MICROBIT** drive? Then you might have a problem with your micro:bit.
+- Try the additional steps described in the [falut finding](https://support.microbit.org/support/solutions/articles/19000024000-fault-finding-with-a-micro-bit) at microbit.org.
+- If this doesn’t help, you can create a [support ticket](https://support.microbit.org/support/tickets/new) to notify the Micro:bit Foundation of the problem. 
 
 ------
 
 
 
-#### 5.2.2Step 2: 检查您的固件版本
+#### 5.2.2 Step 2: Check firmware version
 
-micro：bit上的固件版本可能需要更新。 让我们检查： 
+It’s possible that the firmware version on the micro:bit needs an update. Let’s check:
 
-1. 找到MICROBIT 驱动 
-2. 打开DETAILS.TXT 文件
+1. Go to the **MICROBIT** drive.
+2. Open the **DETAILS.TXT** file.
 
 ![img](./media/k194.png)
 
-在文件中查找说明版本号的行。 Version: ...
+Look for the version number.: Version: …
 
 ![img](./media/k195.png)
 
-或接口Version: ... 
+Or **Interface Version: …**
 
 ![img](./media/k196.png)
 
-如果版本为0234、0241、0243，则需要更新固件（/设备/固件）在您的micro：bit 
-上。 转到步骤3，然后按照升级说明进行操作。 
-如果版本是0249、0250或更高版本，则您具有正确的固件，请转到步骤4。
+If the version is **0234**, **0241**, **0243**, you need to update the [firmware](https://makecode.microbit.org/device/firmware) on your micro:bit. Go to **Step 3** and follow the upgrade instructions.
 
-------
+If the version is **0249**, **0250** or higher, you have the right firmware, just go to **step 4**.
 
 
 
-#### 5.2.3Step 3: 升级固件
+#### 5.2.3 Step 3: Update firmware
 
-1. 将您的micro：bit进入维护模式。 为此，请从micro：bit拔下micro USB线， 
-然后在按住复位按钮的同时重新连接micro USB线。 插入micro USB线后，可以释放复位按钮。 现在，您应该像以前一样看到一个MAINTENANCE驱动器，而不是MICROBIT驱动器。 同样，黄色的LED指示灯将在重置按钮旁边保持点亮。
+1. Put your micro:bit into **MAINTENANCE Mode**. To do this,  please unplug the USB cable from the micro:bit and then re-connect the USB cable after pressing and holding the reset button. Once you insert the cable, you can release the reset button. You should now see **MAINTENANCE** instead of the **MICROBIT** drive. Also, a yellow LED indicator will stay on.
 
 ![img](./media/k197.png)
 
-2. 下载 firmware .hex file 
-    (<https://microbit.org/guide/firmware/>)
-3. 将该文件拖放到 MAINTENANCE驱动器上。
-4. 复制HEX文件时，黄色LED指示灯将闪烁。 复制完成后，LED会熄灭，并且 
-    micro：bit会重置。 现在，MAINTENANCE驱动器会变回MICROBIT。 
-5. 升级完成！ 您可以打开DETAILS.TXT 文件进行检查并查看固件版本已更改为与您复制的HEX文件的版本相匹配。
-    如果您想了解有关连接板，维护模式和升级固件的更多信息，请在固件指南请在固件指南（<https://microbit.org/guide/firmware/>）中进行阅读。
+2. Download firmware .hex file: https://microbit.org/guide/firmware/
+
+3. Drag the file onto the **MAINTENANCE** drive.
+
+4. The yellow LED will flash while the HEX file is copying. After that, the LED will go off and the micro:bit resets. The **MAINTENANCE** drive now changes to **MICROBIT**.
+
+5. The upgrade is complete! You can open the **DETAILS.TXT** file to check the firmware version that matches the one of the **HEX** file you copied.
+
+If you want to know more about connecting the board, MAINTENANCE Mode, and upgrading the firmware, please refer to [Firmware guide](https://microbit.org/guide/firmware/).
+
+
+
+#### 5.2.4 Step 4: Check browser version
+
+You may need to update your browser.
+
+Check that your browser version matches one of these: **Android**, **Chrome OS**, **Linux**, **macOS** and **Windows 10 Chrome 65+**.
 
 ------
 
 
 
-#### 5.2.4Step 4: 检查您的浏览器版本
+#### 5.2.5 Step 5: Pair device
 
-WebUSB是一项相当新的功能，可能需要您更新浏览器。 检查您的浏览器版本是否 
-符合以下条件之一： 适用于Android，Chrome操作系统，Linux，macOS和Windows 10的Chrome 65+。 
+Once you’ve updated the firmware, open the **Chrome Browser**, go to the editor and click on **Pair Device** in settings.
 
-------
+See [WebUSB](https://makecode.microbit.org/device/usb/webusb) (/ device / usb / webusb) for pairing instructions.
 
-
-
-#### 5.2.5Step 5: 配对装置
-
-更新固件后，打开Chrome浏览器，转到编辑器，然后点击齿轮菜单中的“配对设备”。 有关配对说明，请参见WebUSB（/ device / usb / webusb），对应的链接：<https://microbit.org/get-started/user-guide/web-usb/> 。 
-享受快速下载！ 

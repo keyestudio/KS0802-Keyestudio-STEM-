@@ -55,7 +55,7 @@ Link：<http://keyestudio-ks5018.readthedocs.io/>
 
    ![img](./media/an9-1712639138551-5-1712639258554-26.png)
 
-4. Open KidsBlock, but it cannot be opened, because Mac devices only allow to open apps from its App store by default. Thus, we  need to modify some settings. 
+4. Open KidsBlock, but it cannot be opened, because Mac devices only allow us to open apps from its App store by default. Thus, we  need to modify some settings. 
 
    ![img](./media/an9-1-1712639148510-7-1712639258554-27.png)
 
@@ -103,7 +103,7 @@ Click![img](./media/an11-1712639258555-33.png)to shift languages.
 
 #### Device Driver
 
-**If the driver is already installed on the computer, you do not  need to install it again. If not, you need to do the following.**
+**If the driver is already installed on the computer, you do not need to install it again. If not, you need to do the following.**
 
 Click![img](./media/an13-1712639258555-35.png)to choose “**Install driver**”.
 
@@ -202,7 +202,7 @@ Click![img](./media/an13-1712639258555-35.png)to choose “**Install driver**”
 
 #### Extensions
 
-**This kit has integrated required sensors and modules. If you want to add them that  are not available in the kit, please refer to these steps.**
+**This kit has integrated required sensors and modules. If you want to add them that are not available in the kit, please refer to these steps.**
 
 - Click![img](./media/an35-1712639083027-1-1712639258555-57.png)to choose an extension:
 
@@ -263,7 +263,7 @@ Click![img](./media/an13-1712639258555-35.png)to choose “**Install driver**”
 
   ![img](./media/an47-1712639258555-66.png)
 
-- Connect the board to your computer. If there is no port, please install  driver first. Choose the correct board and port and click![img](./media/an52-1712639258556-68.png).
+- Connect the board to your computer. If there is no port, please install driver first. Choose the correct board and port and click![img](./media/an52-1712639258556-68.png).
 
   ![img](./media/an54-1712639258555-65.png)
 
@@ -422,7 +422,7 @@ Dot matrices are very commonplace in daily life, which are widely used in RGB ad
 
 The dot matrix of ESP32 Easy Coding Board contains 25 RGB in a grid.  Previously, we have succeeded in controlling a certain RGB to light by integrating its position value into the test code. Theoretically, we can turn on multiple LEDs at the same time to show patterns, digits and characters.
 
-What’s more, we can also click ”show icon“ to choose the pattern we  like to display. Last but not the least, we can design patterns by  ourselves as well.
+What’s more, we can also click ”show icon“ to choose the pattern we  like to display. Last but not the least, we can design patterns by ourselves as well.
 
 
 
@@ -470,9 +470,9 @@ After uploading test code, the dot matrix starts to show arrows in multiple dire
 
 Buttons can be used to control circuits. In an integrated circuit with a button, the circuit is connected when the button is pressed and if you release the button, the circuit is disconnected.
 
-Capacitive touch detects the user’s operation by measuring changes in capacitance. When you touch the capacitive sensing area, the charge of the human body affects the value of the capacitor, which can be sensed  by the module due to this change.
+Capacitive touch detects the user’s operation by measuring changes in capacitance. When you touch the capacitive sensing area, the charge of the human body affects the value of the capacitor, which can be sensed by the module due to this change.
 
-ESP32 Easy Coding Board boasts three buttons: two programmable  buttons (marked with A and B), and a reset button at back. By pressing the two programmable buttons, three different signals can be input. When we press button A or B or both,  the LED dot matrix will show A, B  and AB respectively.
+ESP32 Easy Coding Board boasts three buttons: two programmable buttons (marked with A and B), and a reset button at back. By pressing the two programmable buttons, three different signals can be input. When we press button A or B or both,  the LED dot matrix will show A, B  and AB respectively.
 
 
 
@@ -508,7 +508,7 @@ Find “if…then…” block to determine whether the buttons are pressed.
 
 #### 5.Test Result 1：
 
-After uploading test code and powering on, the 5x5 dot matrix shows A if button A is pressed, and shows B if button B is pressed, and shows AB if button A and B are pressed together. When the touching area is touched, it shows T.
+After uploading test code and powering on, the 5x5 dot matrix shows A if button A is pressed, and shows B if button B is pressed, and shows AB if buttons A and B are pressed together. When the touching area is touched, it shows T.
 
 ![img](./media/31-1712639258559-109.png)
 
@@ -595,7 +595,7 @@ Play do, re, mi, fa, sol, la, si, and songs.
 
 ####  1.Introduction:
 
-Microphone is a device that converts sound into electrical signals,  which is an important part of the audio field. It is widely used in  voice recording, communication and audio playback.
+Microphone is a device that converts sound into electrical signals,  which is an important part of the audio field. It is widely used in voice recording, communication and audio playback.
 
 Microphones can be divided into many types, including **Dynamic Microphone**, **Condenser Microphone**, **Wireless Microphone**, **USB Microphone** and **Laser Microphone**.
 
@@ -893,10 +893,10 @@ The SD card module is used in conjunction with the MCU on the ESP32  Easy Coding
 
 #### 2.Components:
 
-| ESP32 Easy Coding Board*1         | ![img](./media/2-1712639258556-78.png)   |
-| --------------------------------- | ---------------------------------------- |
-| USB type C  Cable*1               | ![img](./media/3-1712639258556-79.png)   |
-| SD卡*1（not included in the kit） | ![img](./media/65-1712639258560-153.png) |
+| ESP32 Easy Coding Board*1            | ![img](./media/2-1712639258556-78.png)   |
+| ------------------------------------ | ---------------------------------------- |
+| USB type C  Cable*1                  | ![img](./media/3-1712639258556-79.png)   |
+| SD Card*1（not included in the kit） | ![img](./media/65-1712639258560-153.png) |
 
 #### 3.Connection:
 

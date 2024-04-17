@@ -1,361 +1,365 @@
-# 鳄鱼咬手
+# Hand Biting Crocodile
 
-## 1.舵机模块
+## 1.Servo
 
-### 1.1 简介
+### 1.1 Introduction
 
-舵机是一种位置伺服的驱动器，主要是由外壳、电路板、无核心马达、齿轮与位置检测器所构成。其工作原理是由接收机或者单片机发出信号给舵机，其内部有一个基准电路，产生周期为20ms，宽度为1.5ms 的基准信号，将获得的直流偏置电压与电位器的电压比较，获得电压差输出。
+Servo is a position control rotary actuator. It mainly consists of a housing, a circuit board, a core-less motor, a gear and a position sensor. Its working principle is that the servo receives the signal sent by MCUs or receivers and produces a reference signal with a period of 20ms and width of 1.5ms, then compares the acquired DC bias voltage to the voltage of the potentiometer and obtains the voltage difference output.
 
-舵机有很多规格，但所有的舵机都有外接三根线，分别用棕、红、橙三种颜色进行区分，由于舵机品牌不同，颜色也会有所差异，棕色为接地线，红色为电源正极线，橙色为信号线。
+In general, servo has three wires: brown, red and orange. The brown wire is grounded, the red one is a positive pole wire and the orange one is a signal  wire.
 
 ![wps2-1687239587616-2](./media/wps2-1687239587616-2-1712649667607-2.jpg)
 
-舵机的转动的角度是通过调节PWM（脉冲宽度调制）信号的占空比来实现的，标准PWM（脉冲宽度调制）信号的周期固定为20ms（50Hz），理论上脉宽分布应在1ms到2ms 之间，但是，事实上脉宽可由0.5ms 到2.5ms 之间，脉宽和舵机的转角0°～180°相对应。
+The rotation angle of servo is controlled by regulating the duty cycle of PWM (Pulse-Width Modulation) signal. The standard cycle of PWM signal is 20ms (50Hz). Theoretically, the width is distributed between 1ms-2ms, but in fact, it's between 0.5ms-2.5ms. The width corresponds the rotation angle from 0° to 180°. 
 
 ![image-20230620134023059](./media/image-20230620134023059-1712649667606-1.png)
 
-### 1.2 模块参数
+### 1.2 Specification
 
-工作电压：DC 3.3V〜5V
+Working voltage: DC 3.3V〜5V
 
-可操作角度范围：大约 180°(在 500→2500 μsec)
+Operable angle range: approximately 180° (at 500→2500 μsec)
 
-脉波宽度范围：500→2500 μsec
+Pulse width range: 500→2500 μsec
 
-空载转速：0.12±0.01 sec/60（DC 4.8V）  0.1±0.01 sec/60（DC 6V）
+No-load speed: 0.12±0.01 sec/60 (DC 4.8V) 0.1±0.01 sec/60 (DC 6V)
 
-空载电流：200±20mA（DC 4.8V）  220±20mA（DC 6V）
+No-load current: 200±20mA (DC 4.8V) 220±20mA (DC 6V)
 
-停止扭力：1.3±0.01kg·cm（DC 4.8V）  1.5±0.1kg·cm（DC 6V）
+Stopping torque: 1.3±0.01kg·cm (DC 4.8V) 1.5±0.1kg·cm (DC 6V)
 
-停止电流：≦850mA（DC 4.8V）  ≦1000mA（DC 6V）
+Stop current: ≦850mA (DC 4.8V) ≦1000mA (DC 6V)
 
-待机电流：3±1mA（DC 4.8V）  4±1mA（DC 6V）
+Standby current: 3±1mA (DC 4.8V) 4±1mA (DC 6V)
 
-### 1.3 接线图
+### 1.3 Wiring Diagram
 
-|  扩展板   |   舵机    |
-| :-------: | :-------: |
-|    GND    | G（棕色） |
-|    3V3    | V（红色） |
-| P1 / io14 | S（黄色） |
+| Expansion Board |    Servo    |
+| :-------------: | :---------: |
+|       GND       | G（Brown）  |
+|       3V3       |  V（Red）   |
+|    P1 / io14    | S（Yellow） |
 
 ![Servo](./media/Servo.png)
 
-### 1.4 代码
+### 1.4 Code
 
-<p style="color:red;">注意：舵机的旋转角度是0-180度，但是如果已经将鳄鱼组装好了那么角度必须在55-130度之间旋转，因为如果控制舵机到180度但是舵机因为鳄鱼的结构卡住了达不到180度舵机就会发烫导致烧坏，同理0度或者其他能导致舵机卡住发烫的也一样会烧坏舵机！</p>
+<p style="color:red;">Note: The rotation angle of the servo is 0-180 degrees, but if the crocodile has been assembled, the angle must be rotated between 55-130 degrees, otherwise the servo will get hot and burn out.</p>
 
-**代码文件：**
+**Code File：**
 
-代码文件下载链接：[点击下载代码文件](.\MakeCode\MicrobitBitingCrocodile.zip)
+Download link：[Download](.\MakeCode\MicrobitBitingCrocodile.zip)
 
-下载代码文件后解压，然后双击`microbit-1-Servo_Code1.hex`打开文件进行上传代码
+Download the code file and unzip it, then double-click `microbit-1-Servo_Code1.hex `to open the file and upload the code.
 
 ![image-20240412081907926](./media/image-20240412081907926.png)
 
-**自己动手添加代码：**
+**Add code manually：**
 
-1.添加舵机驱动库，点击![image-20240411141436376](./media/image-20240411141436376.png)
+1.Tap ![image-20240411141436376](./media/image-20240411141436376.png) to add servo library.
 
 ![image-20240411131330336](./media/image-20240411131330336.png)
 
-2.在搜索框中输入“Servo”，然后点击![image-20240411131603613](./media/image-20240411131603613.png)搜索，就能看到名为Servo的库文件了，点击添加即可
+2.Input “Servo” and click![image-20240411131603613](./media/image-20240411131603613.png) to add Servo library.
 
 ![image-20240411131510219](./media/image-20240411131510219.png)
 
-3.添加成功
+3.It is successfully added.
 
 ![image-20240411131709253](./media/image-20240411131709253.png)
 
-4.在![image-20240411135053755](./media/image-20240411135053755.png)栏中拖出![image-20240411134928930](./media/image-20240411134928930.png)到![image-20240411134958837](./media/image-20240411134958837.png)中，并设置引脚为P1，角度为55度
+4.Drag ![image-20240411134928930](./media/image-20240411134928930.png)into ![image-20240411134958837](./media/image-20240411134958837.png)from ![image-20240411135053755](./media/image-20240411135053755.png)，and set the pin to P1 and Angle to 55 °.![image-20240411132040159](./media/image-20240411132040159.png)
 
-![image-20240411132040159](./media/image-20240411132040159.png)
-
-5.在![image-20240411135120617](./media/image-20240411135120617.png)栏拖出![image-20240411135225827](./media/image-20240411135225827.png)到![image-20240411135208381](./media/image-20240411135208381.png)下面，并设置延时为1000ms
+5.Drag![image-20240411135225827](./media/image-20240411135225827.png)from ![image-20240411135120617](./media/image-20240411135120617.png) and place it under the ![image-20240411135208381](./media/image-20240411135208381.png)，and set the delay to 1000ms.
 
 ![image-20240411132624453](./media/image-20240411132624453.png)
 
-6.重复步骤4和步骤5，添加设置舵机为90度延时1000ms与设置舵机110度延时1000ms的代码块
+6.Repeat steps 4 and 5 to add the code blocks to set the servo to 90 °  and 110 ° with a delay of 1000ms.
 
-**完整代码：**
+**Complete Code：**
 
 ![image-20240411132800003](./media/image-20240411132800003.png)
 
 
 
-### 1.5 代码结果
+### 1.5 Test Result
 
-上传代码后鳄鱼会先张开嘴一秒钟，然后闭一半的嘴一秒钟，然后再完全将嘴巴闭合。一直重复这个动作。
+After uploading the code, the crocodile will open its mouth for 1s, then close half of its mouth for 1s, and then completely close its mouth. 
 
-### 1.6 扩展教程
+### 1.6 Extended Tutorial
 
-前面我们控制的是鳄鱼进行大角度的张嘴闭嘴，那我们该如何控制鳄鱼慢慢的闭嘴和慢慢的张嘴呢！
+Earlier we have controlled the crocodile to open and close its mouth at a wide angle, so how to control the crocodile to slowly close and open its mouth?
 
-#### 1.6.1 代码
+#### 1.6.1 Code
 
-**代码文件：**
+**Code File：**
 
-代码文件下载链接：[点击下载代码文件](.\MakeCode\MicrobitBitingCrocodile.zip)
+Download link：[Download](.\MakeCode\MicrobitBitingCrocodile.zip)
 
-下载代码文件后解压，然后双击`microbit-1-Servo_Code2.hex`打开文件进行上传代码
+Download the code file and unzip it, then double-click `microbit-1-Servo_Code2.hex`to open the file and upload the code.
 
 ![image-20240412082022570](./media/image-20240412082022570.png)
 
-**自己动手添加代码：**
+**Add code manually：**
 
-1.在![image-20240411135423166](./media/image-20240411135423166.png)栏点击![image-20240411135444604](./media/image-20240411135444604.png)，添加一个名为value的变量
+1.Click![image-20240411135444604](./media/image-20240411135444604.png) in ![image-20240411135423166](./media/image-20240411135423166.png) and add a variable named value.
 
 ![image-20240411135607139](./media/image-20240411135607139.png)
 
-2.将![image-20240411135423166](./media/image-20240411135423166.png)栏的![image-20240411135741919](./media/image-20240411135741919.png)拖到![image-20240411135755058](./media/image-20240411135755058.png)中，并在白色框中设置值为55
+2.Drag![image-20240411135741919](./media/image-20240411135741919.png)from ![image-20240411135423166](./media/image-20240411135423166.png)into![image-20240411135755058](./media/image-20240411135755058.png)，and set the value to 55 in the white box.
 
 ![image-20240411134206938](./media/image-20240411134206938.png)
 
-3.在![image-20240411135834409](./media/image-20240411135834409.png)栏中拖出![image-20240411135850882](./media/image-20240411135850882.png)到![image-20240411134958837](./media/image-20240411134958837.png)中，并在白色框中设置循环次数为55
+3.Drag![image-20240411135850882](./media/image-20240411135850882.png)from ![image-20240411135834409](./media/image-20240411135834409.png) into![image-20240411134958837](./media/image-20240411134958837.png)，and set the repeat times in the white box to 55.
 
 ![image-20240411134329133](./media/image-20240411134329133.png)
 
-4.在![image-20240411135423166](./media/image-20240411135423166.png)栏中拖出![image-20240411134815736](./media/image-20240411134815736.png)到![image-20240411140012957](./media/image-20240411140012957.png)中
+4.Drag![image-20240411134815736](./media/image-20240411134815736.png)from ![image-20240411135423166](./media/image-20240411135423166.png)into![image-20240411140012957](./media/image-20240411140012957.png).
 
 ![image-20240411134555038](./media/image-20240411134555038.png)
 
-5.在![image-20240411135053755](./media/image-20240411135053755.png)栏中拖出![image-20240411134928930](./media/image-20240411134928930.png)到![image-20240411134815736](./media/image-20240411134815736.png)下面，并设置引脚为P1
+5.Drag![image-20240411134928930](./media/image-20240411134928930.png) and from![image-20240411135053755](./media/image-20240411135053755.png) place it under the![image-20240411134815736](./media/image-20240411134815736.png)，and set pin to P1.
 
 ![image-20240411140622035](./media/image-20240411140622035.png)
 
-6.在![image-20240411135423166](./media/image-20240411135423166.png)栏中拖出![image-20240411140703032](./media/image-20240411140703032.png)放到![image-20240411140727409](./media/image-20240411140727409.png)的白色框中
+6.Drag![image-20240411140703032](./media/image-20240411140703032.png)from ![image-20240411135423166](./media/image-20240411135423166.png)and place it in the in the white box of  ![image-20240411140727409](./media/image-20240411140727409.png).
 
 ![image-20240411140801321](./media/image-20240411140801321.png)
 
-7.在![image-20240411135120617](./media/image-20240411135120617.png)栏拖出![image-20240411135225827](./media/image-20240411135225827.png)到![image-20240411140848252](./media/image-20240411140848252.png)下面，并设置延时为30ms
+7.Drag![image-20240411135225827](./media/image-20240411135225827.png)from ![image-20240411135120617](./media/image-20240411135120617.png) and place it under the ![image-20240411140848252](./media/image-20240411140848252.png)，and set the delay to 30ms.
 
 ![image-20240411140905994](./media/image-20240411140905994.png)
 
-9.右击![image-20240411140012957](./media/image-20240411140012957.png)然后点击“Duplicate”
+9.Right-click![image-20240411140012957](./media/image-20240411140012957.png)and tap Duplicate”.
 
 ![image-20240411140946657](./media/image-20240411140946657.png)
 
-10.将复制好的代码块添加在![image-20240411141156778](./media/image-20240411141156778.png)下方，修改![image-20240411134815736](./media/image-20240411134815736.png)白色框中的“1”为“-1”
+10.Add the copied code block below ![image-20240411141156778](./media/image-20240411141156778.png)，then modify  "1" in the white box of ![image-20240411134815736](./media/image-20240411134815736.png) to "-1".
 
 ![image-20240411141318351](./media/image-20240411141318351.png)
 
-**完整代码：**
+**Complete Code：**
 
 ![image-20240411133752416](./media/image-20240411133752416.png)
 
-#### 1.6.2 代码结果
+#### 1.6.2 Test Result
 
-上传代码后，鳄鱼会慢慢张嘴然后会慢慢闭合，一直重复增动作
+After uploading the code, the crocodile will slowly open its mouth and then slowly close it.
 
-## 2.超声波模块
+## 2.Ultrasonic Module
 
-### 2.1 简介
+### 2.1 Introduction
 
-HC-SR04超声波传感器像蝙蝠一样使用声纳来确定与物体的距离。它在一个易于使用的包装中提供了出色的非接触式范围检测，具有高精度和稳定的读数。它配有超声波发射器和接收器模块。 HC-SR04或超声波传感器正在广泛的电子项目中用于创建障碍物检测和距离测量应用以及各种其他应用。
+The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like what bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. It comes with an ultrasonic transmitter and a receiver.
 
-### 2.2 模块参数
+It is being used in a wide range of electronics projects for creating obstacle detection and distance measuring application as well as various other applications.
 
-工作电压 :3.3-5V 
+### 2.2 Specification
 
-静态电流 : <2mA
+Working voltage:3.3-5V 
 
-工作电流: 15mA
+Quiescent current: <2mA
 
-有效角度: <15°
+Working current: 15mA
 
-距离范围 : 2cm – 400 cm
+Effective angle: <15°
 
-精度 : 0.3 cm
+Distance range: 2cm – 400 cm
 
-测量角度:30度
+Accuracy: 0.3 cm
 
-触发输入脉冲宽度:10微秒
+Measuring angle: 30 degrees
+
+Trigger input pulse width: 10 microseconds
+
+
 
 ![wps3-1687242720835-4](./media/wps3-1687242720835-4.jpg)
 
-### 2.3 接线图
+### 2.3 Wiring Diagram
 
-|   扩展板   | 模块 |
-| :--------: | :--: |
-|    GND     |  G   |
-|    3V3     |  V   |
-|  P8 / io4  | Trig |
-| P12 / io15 | Echo |
+| Expansion Board | Module |
+| :-------------: | :----: |
+|       GND       |   G    |
+|       3V3       |   V    |
+|    P8 / io4     |  Trig  |
+|   P12 / io15    |  Echo  |
 
 ![ultrasonic](./media/ultrasonic.png)
 
-### 2.4 代码
+### 2.4 Code
 
-<p style="color:red">注意：超声波的测量距离是2-300cm，但是装在鳄鱼上后只能识别4-30cm，这是因为超声波是有接收反弹回来的信号是有一定角度的，但是由于鳄鱼身体的椴木板挡住了导致只能识别到30cm，不过这不影响我们的咬手鳄鱼教程</p>
+<p style="color:red">Note: The measuring distance of ultrasonic is 2-300cm, but after being assembled on the crocodile, it can only detect 4-30cm. For the ultrasonic receives the bounced signal at a certain angle, but the basswood board of the crocodile body blocks it. As a result, only 30cm can be recognized, but this does not affect our hand biting crocodile tutorial.</p>
 
-**代码文件：**
+**Code File：**
 
-代码文件下载链接：[点击下载代码文件](.\MakeCode\MicrobitBitingCrocodile.zip)
+Download link：[Download](.\MakeCode\MicrobitBitingCrocodile.zip)
 
-下载代码文件后解压，然后双击`microbit-2-Ultrasonic_Code.hex`打开文件进行上传代码
+Download the code file and unzip it, then double-click `microbit-2-Ultrasonic_Code.hex`to open the file and upload the code.
 
 ![image-20240412082118573](./media/image-20240412082118573.png)
 
-**自己动手添加代码：**
+**Add code manually：**
 
-1.添加舵机驱动库，点击![image-20240411141436376](./media/image-20240411141436376.png)
+1.Tap![image-20240411141436376](./media/image-20240411141436376.png)to add sonar library.
 
 ![image-20240411131330336](./media/image-20240411131330336.png)
 
-2.在搜索框中输入“sonar”，然后点击![image-20240411131603613](./media/image-20240411131603613.png)搜索，就能看到名为sonar的库文件了，点击添加即可
+2.Input “sonar”and click![image-20240411131603613](./media/image-20240411131603613.png)to add sonar library.
 
 ![image-20240411151421395](./media/image-20240411151421395.png)
 
-3.添加成功
+3.The sonar library is added.
 
 ![image-20240411151559812](./media/image-20240411151559812.png)
 
-4.在![image-20240411151634760](./media/image-20240411151634760.png)栏，拖出![image-20240411151657614](./media/image-20240411151657614.png)到![image-20240411135755058](./media/image-20240411135755058.png)中
+4.Drag![image-20240411151657614](./media/image-20240411151657614.png)from ![image-20240411151634760](./media/image-20240411151634760.png)into ![image-20240411135755058](./media/image-20240411135755058.png).
 
 ![image-20240411151752157](./media/image-20240411151752157.png)
 
-5.在![image-20240411135423166](./media/image-20240411135423166.png)栏点击![image-20240411135444604](./media/image-20240411135444604.png)，添加一个名为value的变量
+5.Click![image-20240411135444604](./media/image-20240411135444604.png) in ![image-20240411135423166](./media/image-20240411135423166.png) and add a variable named value.
 
 ![image-20240411135607139](./media/image-20240411135607139.png)
 
-6.在![image-20240411135423166](./media/image-20240411135423166.png)栏拖出![image-20240411135741919](./media/image-20240411135741919.png)到![image-20240411134958837](./media/image-20240411134958837.png)中
+6.Drag![image-20240411135741919](./media/image-20240411135741919.png)from ![image-20240411135423166](./media/image-20240411135423166.png)into![image-20240411134958837](./media/image-20240411134958837.png).
 
 ![image-20240411152209708](./media/image-20240411152209708.png)
 
-7.在![image-20240411152033812](./media/image-20240411152033812.png)栏拖出![image-20240411152100056](./media/image-20240411152100056.png)到![image-20240411135741919](./media/image-20240411135741919.png)的白色框中，并设置Trig为P8脚,echo 为P12脚，unit为CM
+7.Drag![image-20240411152100056](./media/image-20240411152100056.png)from ![image-20240411152033812](./media/image-20240411152033812.png) into the white box of ![image-20240411135741919](./media/image-20240411135741919.png)，and set trig to P8 pin, echo to P12 pin, unit to CM.![image-20240411152339265](./media/image-20240411152339265.png)
 
-![image-20240411152339265](./media/image-20240411152339265.png)
-
-8.在![image-20240411151634760](./media/image-20240411151634760.png)栏拖出![image-20240411152425981](./media/image-20240411152425981.png)放到![image-20240411152456476](./media/image-20240411152456476.png)下面，并修改第一个白色框中的字符为“distance=”
+8.Drag![image-20240411152425981](./media/image-20240411152425981.png)from ![image-20240411151634760](./media/image-20240411151634760.png) and place it under the ![image-20240411152456476](./media/image-20240411152456476.png)，and modify the character in the first white box to "distance=".
 
 ![image-20240411152553210](./media/image-20240411152553210.png)
 
-9.在![image-20240411135423166](./media/image-20240411135423166.png)栏退出![image-20240411140703032](./media/image-20240411140703032.png)放到![image-20240411152717631](./media/image-20240411152717631.png)的第二个白色框中
+9.Drag![image-20240411140703032](./media/image-20240411140703032.png)from ![image-20240411135423166](./media/image-20240411135423166.png)and place it into the second white box of![image-20240411152717631](./media/image-20240411152717631.png).
 
 ![image-20240411152816974](./media/image-20240411152816974.png)
 
-10.在![image-20240411135120617](./media/image-20240411135120617.png)栏拖出![image-20240411135225827](./media/image-20240411135225827.png)放到![image-20240411152957623](./media/image-20240411152957623.png)下面，并修改延时为500ms
+10.Drag![image-20240411135225827](./media/image-20240411135225827.png)from ![image-20240411135120617](./media/image-20240411135120617.png)and place it under the ![image-20240411152957623](./media/image-20240411152957623.png)，and modify the delay to 500ms.
 
-**完整代码：**
+
+
+**Complete Code：**
 
 ![image-20240411155438811](./media/image-20240411155438811.png)
 
-### 2.5 代码结果
+### 2.5 Test Result
 
-如果你不能在浏览器的makecode编译界面打印数据就使用CoolTerm软件，详情在micro bit基础教程中。
+If you cannot print data in the browser's makecode compilation interface, use CoolTerm software. Details are in the micro bit basic tutorial.
 
-上传代码后，打开CoolTerm软件，点击Options，选择SerialPort，设置COM口和波特率，波特率设置为115200（经过测试，micro:bit  主板的USB串口通讯波特率是115200），点击OK后，最后点击Connect。
+After uploading the code, open the CoolTerm software, click Options, select SerialPort, set the COM port and baud rate to 115200 (after testing, the USB serial communication baud rate of the micro:bit board is 115200), then click OK and Connect.
 
 ![image-20240411161642015](./media/image-20240411161642015.png)
 
-设置完成后我们便能在串口打印区看到超声波感应到的距离了，串口打印距离会每个0.5s打印一次
+After the setting is completed, we can see the distance sensed by the ultrasonic in the serial port printing area. The serial port printing distance will be printed every 0.5s.
 
 ![image-20240411155421424](./media/image-20240411155421424.png)
 
-## 3.按键控制鳄鱼咬合
+## 3.Buttons Control the Crocodile 
 
-### 3.1 简介
+### 3.1 Introduction
 
-通过ESP32 Easy Coding Board板载的AB按键控制鳄鱼张嘴与闭嘴。
+In this project, we work to control the crocodile to open and close its mouth through the AB buttons on the microbit.
 
-### 3.2 代码
+### 3.2 Code
 
-**代码文件：**
+**Code File：**
 
-代码文件下载链接：[点击下载代码文件](.\MakeCode\MicrobitBitingCrocodile.zip)
+Download link：[Download](.\MakeCode\MicrobitBitingCrocodile.zip)
 
-下载代码文件后解压，然后双击`microbit-3-Key_controlled_crocodile_Code .hex`打开文件进行上传代码
+Download the code file and unzip it, then double-click `microbit-3-Key_controlled_crocodile_Code .hex` to open the file and upload the code.
 
 ![image-20240412082159608](./media/image-20240412082159608.png)
 
-**自己动手添加代码：**
+**Add code manually：**
 
-1.添加servo库，然后在![image-20240411135053755](./media/image-20240411135053755.png)栏拖出![image-20240411134928930](./media/image-20240411134928930.png)放到![image-20240411135755058](./media/image-20240411135755058.png)中，并设置引脚为P1，角度为110度
+1.Add servo library  then drag![image-20240411134928930](./media/image-20240411134928930.png)from ![image-20240411135053755](./media/image-20240411135053755.png)and place it into![image-20240411135755058](./media/image-20240411135755058.png)，and set the pin to P1 and the angle to 110°.
 
 ![image-20240411163021847](./media/image-20240411163021847.png)
 
-2.在![image-20240411135120617](./media/image-20240411135120617.png)栏拖出![image-20240411163118548](./media/image-20240411163118548.png)到![image-20240411135755058](./media/image-20240411135755058.png)中，并设置点阵显示![image-20240411163149067](./media/image-20240411163149067.png)
+2.Drag![image-20240411163118548](./media/image-20240411163118548.png)from ![image-20240411135120617](./media/image-20240411135120617.png)and place it into![image-20240411135755058](./media/image-20240411135755058.png)，and set the dot matrix to display![image-20240411163149067](./media/image-20240411163149067.png).
 
 ![image-20240411163213565](./media/image-20240411163213565.png)
 
-3.在![image-20240411163233958](./media/image-20240411163233958.png)栏拖出![image-20240411163257914](./media/image-20240411163257914.png)然后在里面添加设置舵机为55度的代码和点阵显示![image-20240411163415776](./media/image-20240411163415776.png)的代码
+3.Drag![image-20240411163257914](./media/image-20240411163257914.png)from ![image-20240411163233958](./media/image-20240411163233958.png), then add the set servo to 55 ° code and the dot matrix displays![image-20240411163415776](./media/image-20240411163415776.png)code.
 
 ![image-20240411163431960](./media/image-20240411163431960.png)
 
-4.右击![image-20240411163257914](./media/image-20240411163257914.png)复制，然后修改按键为B，舵机角度为110度，点阵显示![image-20240411163149067](./media/image-20240411163149067.png)
+4.Copy![image-20240411163257914](./media/image-20240411163257914.png)and alter button to B，then set servo angle to 110°，dot matrix displays![image-20240411163149067](./media/image-20240411163149067.png).
 
 ![image-20240411163540280](./media/image-20240411163540280.png)
 
-**完整代码：**
+**Complete Code：**
 
 ![image-20240411162817429](./media/image-20240411162817429.png)
 
-### 3.3 代码结果
+### 3.3 Test Result
 
-上传代码成功后，按下板载的按键A鳄鱼点阵显示![image-20240411163415776](./media/image-20240411163415776.png)并且鳄鱼嘴巴闭合 ，按下板载的按键B鳄鱼点阵显示![image-20240411163149067](./media/image-20240411163149067.png)并且鳄鱼嘴巴张开。
+After the code is uploaded successfully, press the button A and the crocodile will display ![image-20240411163415776](./media/image-20240411163415776.png)and close its mouth. Press the button B and the crocodile will display![image-20240411163149067](./media/image-20240411163149067.png)and open its mouth. 
 
-## 4.鳄鱼咬手
+## 4.Hand Biting Crocodile
 
-### 4.1 简介
+### 4.1 Introduction
 
-咬手鳄鱼，鳄鱼张开嘴巴当你把手伸进鳄鱼嘴巴的时候鳄鱼上面的超声波会测量手到鳄鱼嘴巴里的深度，当达到我们设置好的深度的时候鳄鱼就会咬下。
+The crocodile opens its mouth. When you put your hand into the crocodile's mouth, the ultrasonic on the crocodile will measure the depth of your hand into the crocodile's mouth. When it reaches the depth we set, the crocodile will bite.
 
-### 4.2 代码
+### 4.2 Code
 
-**代码文件：**
+**Code File：**
 
-代码文件下载链接：[点击下载代码文件](.\MakeCode\MicrobitBitingCrocodile.zip)
+Download link：[Download](.\MakeCode\MicrobitBitingCrocodile.zip)
 
-下载代码文件后解压，然后双击`microbit-4-Crocodile_Bite_Code.hex`打开文件进行上传代码
+Download the code file and unzip it, then double-click `microbit-4-Crocodile_Bite_Code.hex ` to open the file and upload the code.
 
 ![image-20240412082245262](./media/image-20240412082245262.png)
 
-**自己动手添加代码：**
+**Add code manually：**
 
-1.添加舵机库与超声波库，在生成两个变量一个变量叫“distance”另一个变量叫“value”
+1.Add the servo library and the ultrasonic library, and generate variables "distance" and "value".
 
-2.将变量的值设置成5的代码块与将设置舵机旋转到110度代码块与点阵显示![image-20240411163149067](./media/image-20240411163149067.png)的代码块，添加到![image-20240411135755058](./media/image-20240411135755058.png)中
+2.Add ![image-20240416104740404](media/image-20240416104740404.png)into![image-20240411135755058](./media/image-20240411135755058.png).
 
 ![image-20240411165204056](./media/image-20240411165204056.png)
 
-2.将![image-20240411135741919](./media/image-20240411135741919.png)添加到![image-20240411134958837](./media/image-20240411134958837.png)中，设置变量为‘distance’
+2.Add![image-20240411135741919](./media/image-20240411135741919.png)into![image-20240411134958837](./media/image-20240411134958837.png)，and set variable to ‘distance’.
 
 ![image-20240411165357924](./media/image-20240411165357924.png)
 
-3.将![image-20240411152100056](./media/image-20240411152100056.png)添加到![image-20240411165525534](./media/image-20240411165525534.png)中，设置trig为P8脚，echo为P12脚，unit为CM
+3.Add![image-20240411152100056](./media/image-20240411152100056.png)into![image-20240411165525534](./media/image-20240411165525534.png)，and set trig to P8 pin, echo to P12 pin, unit to CM.
 
 ![image-20240411165615989](./media/image-20240411165615989.png)
 
-4.在![image-20240411165643724](./media/image-20240411165643724.png)栏拖出![image-20240411165722484](./media/image-20240411165722484.png)代码块然后添加到![image-20240411165759723](./media/image-20240411165759723.png)下面
+4.Drag![image-20240411165722484](./media/image-20240411165722484.png)from ![image-20240411165643724](./media/image-20240411165643724.png)and place it under the ![image-20240411165759723](./media/image-20240411165759723.png).
 
 ![image-20240411165825260](./media/image-20240411165825260.png)
 
-5.在![image-20240411165643724](./media/image-20240411165643724.png)拖出![image-20240411165906274](./media/image-20240411165906274.png)代码块，添加到![image-20240411165722484](./media/image-20240411165722484.png)代码块的菱形框中
+5.Drag![image-20240411165906274](./media/image-20240411165906274.png)from ![image-20240411165643724](./media/image-20240411165643724.png)and place it under the diamond box of ![image-20240411165722484](./media/image-20240411165722484.png).
 
 ![image-20240411170008163](./media/image-20240411170008163.png)
 
-6.将![image-20240411170057223](./media/image-20240411170057223.png)添加在![image-20240411165906274](./media/image-20240411165906274.png)的左边，![image-20240411170134627](./media/image-20240411170134627.png)添加在![image-20240411165906274](./media/image-20240411165906274.png)右边形成条件式；distance < value
+6.Add![image-20240411170057223](./media/image-20240411170057223.png)to the left box of ![image-20240411165906274](./media/image-20240411165906274.png)，![image-20240411170134627](./media/image-20240411170134627.png)to the right box of![image-20240411165906274](./media/image-20240411165906274.png)；distance < value.
 
 ![image-20240411170236525](./media/image-20240411170236525.png)
 
-7.将![image-20240411135741919](./media/image-20240411135741919.png)添加到![image-20240411170420122](./media/image-20240411170420122.png)中
+7.Add![image-20240411135741919](./media/image-20240411135741919.png)into ![image-20240411170420122](./media/image-20240411170420122.png).
 
 ![image-20240411170539546](./image-20240411170539546.png)
 
-8.在![image-20240411170603994](./media/image-20240411170603994.png)栏拖出![image-20240411170616999](./media/image-20240411170616999.png)代码块到![image-20240411135741919](./media/image-20240411135741919.png)中，并设置数值为3to8
+8.Drag![image-20240411170616999](./media/image-20240411170616999.png)from ![image-20240411170603994](./media/image-20240411170603994.png)into![image-20240411135741919](./media/image-20240411135741919.png)，and set the value to 3 to 8.
 
 ![image-20240411170718826](./media/image-20240411170718826.png)
 
-9.在![image-20240411171045550](./media/image-20240411171045550.png)中添加代码，先控制舵机旋转到55度，点阵显示![image-20240411163415776](./media/image-20240411163415776.png)，然后延时3秒钟，舵机旋转到110度，点阵视显示![image-20240411163149067](./media/image-20240411163149067.png)然后延时1秒钟
+9.Add code in![image-20240411171045550](./media/image-20240411171045550.png)，first, set the servo to 55°，dot matrix displays ![image-20240411163415776](./media/image-20240411163415776.png)，and delays 3s，then set the servo to 110°，dot matrix displays![image-20240411163149067](./media/image-20240411163149067.png)and delays 1s.
 
-**完整代码：**
+**Complete Code：**
 
 ![image-20240411164726559](./media/image-20240411164726559.png)
 
-### 4.3代码结果
+### 4.3 Test Result
 
-上传代码成功后鳄鱼张嘴，点阵显示绿色微笑，手往鳄鱼嘴里申当手离超声波的距离满足鳄鱼咬合条件时，鳄鱼咬合点阵显示红色哭脸，咬合3秒钟后鳄鱼松嘴并且点阵显示绿色笑脸，最后的1秒延时是为了可以将手从鳄鱼嘴里缩回来准备的。1s过后进入下一个咬手过程。
+After the code is successfully uploaded, the crocodile opens its mouth, and the RGB dot matrix displays a green smile. When the distance between the hand and the ultrasonic meets the crocodile's bite conditions, the crocodile bites and the RGB dot matrix displays a red crying face. The crocodile releases its mouth after 3s of bite. And the RGB dot matrix displays a green smiley face, the final 1s delay is to prepare for retracting the hand from the crocodile's mouth. After 1s, it enters the next hand-biting process.
+
+
 
 
 

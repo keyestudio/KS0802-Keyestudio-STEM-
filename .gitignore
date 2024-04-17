@@ -3,9 +3,11 @@ make.bat
 Makefile
 *副本*
 Thumbs.db
-*.doc
-*.docx
-*.pdf
+.doc
+.docx
+.pdf
+.py
+/*.rst
 .vscode
 _build
 

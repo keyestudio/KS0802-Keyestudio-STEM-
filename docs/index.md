@@ -1,8 +1,8 @@
 
 
-**Thank you for choosing keyestudio!**
+ **Thank you for choosing keyestudio!**
 
-**We will endeavor to provide you with better products and services!**
+ **We will endeavor to provide you with better products and services!**
 
 ------
 
@@ -20,7 +20,7 @@ Welcome to check out more contents from our official website:
 
 **Obtain Information and After-sales Service**
 
-1. Download address：
+1. Download address：[Click on the link to download](./Codes.zip)
 2. If something is found missing or broken, or you have some difficulty learning the kit, please feel free to contact us. Welcome to  send email to us: [service@keyestudio.com](http://m.138.gz.cn/webadmin/~CAmsnCrrNXhTAySKCerrIfWjjZuuWVfI/~/usr/mod_edituser.jsp?;uid=service@keyestudio.com;;clearCache=)
 3. We will endeavor to update projects and products continuously from your sincere advice! Thanks!
 

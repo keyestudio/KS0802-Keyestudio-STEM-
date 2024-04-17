@@ -4,7 +4,7 @@
 
 ### 1.1 Introduction
 
-Servo is a position control rotary actuator. It mainly consists of a housing, a circuit board, a core-less motor, a gear and a position sensor. Its working principle is that the servo receives the signal sent by MCUs or receivers and produces a reference signal with a period of 20ms and width of 1.5ms, then compares the acquired DC bias voltage to the voltage of the potentiometer and obtain the voltage difference output.
+Servo is a position control rotary actuator. It mainly consists of a housing, a circuit board, a core-less motor, a gear and a position sensor. Its working principle is that the servo receives the signal sent by MCUs or receivers and produces a reference signal with a period of 20ms and width of 1.5ms, then compares the acquired DC bias voltage to the voltage of the potentiometer and obtains the voltage difference output.
 
 In general, servo has three wires: brown, red and orange. The brown wire is grounded, the red one is a positive pole wire and the orange one is a signal  wire.
 
@@ -16,7 +16,7 @@ The rotation angle of servo is controlled by regulating the duty cycle of PWM (P
 
 ### 1.2 Specification
 
-Working voltage: DC 4.8V~6V
+Working voltage: DC 3.3V~5V
 
 Operable angle range: approximately 180° (at 500→2500 μsec)
 
@@ -94,7 +94,7 @@ Earlier we have controlled the crocodile to open and close its mouth at a wide a
 
 Download link：[Download](.\Code\BitingCrocodileTutorialCodes.zip)
 
-Download the code file and unzip it, then double-click `1-Servo_Code2.sb3 `to open the file and upload the code.
+Download the code file and unzip it, then double-click `1-Servo_Code2.sb3 ` to open the file and upload the code.
 
 ![image-20240409115949754](./media/image-20240409115949754.png)
 
@@ -144,13 +144,13 @@ After uploading the code, the crocodile will slowly open its mouth and then slow
 
 ### 2.1 Introduction
 
-The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like what bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. It comes complete with an ultrasonic transmitter and receiver modules.
+The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like what bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. It comes with an ultrasonic transmitter and a receiver.
 
- It is being used in a wide range of electronics projects for creating obstacle detection and distance measuring application as well as various other applications.
+It is being used in a wide range of electronics projects for creating obstacle detection and distance measuring application as well as various other applications.
 
 ### 2.2 Specification
 
-Working voltage:+5V
+Working voltage:3.3-5V 
 
 Quiescent current: <2mA
 
@@ -181,13 +181,13 @@ Trigger input pulse width: 10 microseconds
 
 ### 2.4 Code
 
-<p style="color:red">Note: The measuring distance of ultrasonic is 2-300cm, but after being assembled on the crocodile, it can only detect 4-30cm. For the ultrasonic receives the bounced signal at a certain angle, but the basswood board of the crocodile body blocks it. As a result, only 30cm can be recognized, but this does not affect our hand-biting crocodile tutorial.</p>
+<p style="color:red">Note: The measuring distance of ultrasonic is 2-300cm, but after being assembled on the crocodile, it can only detect 4-30cm. For the ultrasonic receives the bounced signal at a certain angle, but the basswood board of the crocodile body blocks it. As a result, only 30cm can be recognized, but this does not affect our hand biting crocodile tutorial.</p>
 
 **Code File：**
 
 Download link：[Download](.\Code\BitingCrocodileTutorialCodes.zip)
 
-Download the code file and unzip it, then double-click `2-Ultrasonic_Code.sb3 `to open the file and upload the code.
+Download the code file and unzip it, then double-click `2-Ultrasonic_Code.sb3 ` to open the file and upload the code.
 
 ![image-20240409120027866](./media/image-20240409120027866.png)
 
@@ -201,7 +201,7 @@ Download the code file and unzip it, then double-click `2-Ultrasonic_Code.sb3 `t
 
 ![image-20240408134844456](./media/image-20240408134844456.png)
 
-3.Drag out the serial baudrate module from the `Serial` , set begin baudrate to 9600, and then place it under the `when Arduino begin` module.
+3.Drag out the serial begin baudrate module from the `Serial` , set begin baudrate to 9600, and then place it under the `when Arduino begin` module.
 
 ![image-20240409094334194](./media/image-20240409094334194.png)
 
@@ -221,101 +221,101 @@ Download the code file and unzip it, then double-click `2-Ultrasonic_Code.sb3 `t
 
 ![image-20240409095215543](./media/image-20240409095215543.png)
 
-8.在`Variable Type`栏中拖出`variable`模块，修改变量名为distance，然后放到串口打印模块的白色框中
+8.Drag out the `variable` module from the `Variable Type` , change the variable name to distance, and then place it in the white box of the serial print module.
 
 ![image-20240409095334013](./media/image-20240409095334013.png)
 
-9.在`Control`栏拖出拖出延时模块，设置延时为0.3，然后放到串口打印模块下面，这样我们的代码就搭建完成了
+9.Drag out the delay module from the `Control`, set the delay to 0.3, and then place it under the serial print module.
 
 ![image-20240409093905594](./media/image-20240409093905594.png)
 
-### 2.5 代码结果
+### 2.5 Test Result
 
-上传代码后，如图点击右上角的串口打印区，然后点击有下架的![image-20240409095810773](./media/image-20240409095810773.png)设置波特率为9600（一般默认是9600无需设置)
+After uploading the code, click on the serial port printing area in the upper right corner as shown in the figure, then click on the![image-20240409095810773](./media/image-20240409095810773.png) to set the baud rate to 9600.
 
 ![image-20240409095718342](./media/image-20240409095718342.png)
 
-设置完成后我们便能在串口打印区看到超声波感应到的距离了，串口打印距离会每个0.3s打印一次
+After the setting is completed, we can see the distance sensed by the ultrasonic in the serial port printing area. The serial port printing distance will be printed every 0.3s.
 
 ![image-20240409100122569](./media/image-20240409100122569.png)
 
 
 
-## 3.按键控制鳄鱼咬合
+## 3.Buttons Control the Crocodile 
 
-### 3.1 简介
+### 3.1 Introduction
 
-通过ESP32 Easy Coding Board板载的AB按键控制鳄鱼张嘴与闭嘴。
+In this project, we work to control the crocodile to open and close its mouth through the AB buttons on the ESP32 Easy Coding Board.
 
-### 3.2 代码
+### 3.2 Code
 
-**代码文件：**
+**Code File：**
 
-代码文件下载链接：[点击下载代码文件](.\Code\BitingCrocodileTutorialCodes.zip)
+Download link：[Download](.\Code\BitingCrocodileTutorialCodes.zip)
 
-下载代码文件后解压，然后双击`3-Key_controlled_crocodile_Code.sb3`打开文件进行上传代码
+Download the code file and unzip it, then double-click`3-Key_controlled_crocodile_Code.sb3 `to open the file and upload the code.
 
 ![image-20240409130125783](./media/image-20240409130125783.png)
 
-**自己动手添加代码：**
+**Add code manually：**
 
-1.添加`whrn Arduino begin`模块与初始化RGB点阵与舵机的状态，最开始为张嘴状态
+1.Add the `when Arduino begin` module and initialize the state of the RGB dot matrix and servo with an open mouth.
 
 ![image-20240409110135033](./media/image-20240409110135033.png)
 
-2.在`Control`栏拖出判断代码块放到`forever`模块中，设置判断条件为按键A是否被按下，并在判断代码块中添加RGB点阵显示红色哭脸的代码和舵机旋转到55度的代码
+2.Drag the if then code block from the `Control` and place it in the `forever` module, set the judgment condition to whether button A is pressed, and add the RGB dot matrix display red crying face code and the servo rotate to 55 degree code to the if then code block. 
 
 ![image-20240409110800297](./media/image-20240409110800297.png)
 
-3.复制第一个判断模块的代码，然后修改RGB点阵显示绿色笑脸，舵机旋转到110度
+3.Copy the first if then code, then modify the RGB dot matrix to display a green smiley face, and rotate the servo to 110 degrees.
 
 ![image-20240409111238580](./media/image-20240409111238580.png)
 
-**完整代码：**
+**Complete Code：**
 
 ![Ultrasonic_Code-1712632430694](./media/Ultrasonic_Code-1712632430694.png)
 
-### 3.3 代码结果
+### 3.3 Test Result
 
-上传代码成功后，按下板载的按键A鳄鱼显示红色哭脸并且鳄鱼嘴巴闭合 ，按下板载的按键B鳄鱼显示绿色微笑并且鳄鱼嘴巴张开。
+After the code is uploaded successfully, press the button A and the crocodile will display a red crying face and close its mouth. Press the button B and the crocodile will display a green smile and its mouth will open.
 
-## 4.鳄鱼咬手
+## 4.Hand Biting Crocodile
 
-### 4.1 简介
+### 4.1 Introduction
 
-咬手鳄鱼，鳄鱼张开嘴巴当你把手伸进鳄鱼嘴巴的时候鳄鱼上面的超声波会测量手到鳄鱼嘴巴里的深度，当达到我们设置好的深度的时候鳄鱼就会咬下。
+The crocodile opens its mouth. When you put your hand into the crocodile's mouth, the ultrasonic on the crocodile will measure the depth of your hand into the crocodile's mouth. When it reaches the depth we set, the crocodile will bite.
 
-### 4.2 代码
+### 4.2 Code
 
-**代码文件：**
+**Code File：**
 
-代码文件下载链接：[点击下载代码文件](.\Code\BitingCrocodileTutorialCodes.zip)
+Download link：[Download](.\Code\BitingCrocodileTutorialCodes.zip)
 
-下载代码文件后解压，然后双击`4-Crocodile_Bite_Code.sb3`打开文件进行上传代码
+Download the code file and unzip it, then double-click`4-Crocodile_Bite_Code.sb3`to open the file and upload the code.
 
 ![image-20240409130229411](./media/image-20240409130229411.png)
 
-**自己动手添加代码：**
+**Add code manually：**
 
-1.初始化中设置波特率为9600,声明两个int类型变量distance（distance用于存放超声波测量的距离）与item（item用于随机生成数值的存放）其中item的初始值为5，设置舵机角度为110度，RGB点阵显示绿色笑脸
+1.Set the baud rate to 9600 during initialization, declare two int type variables distance (distance is used to store the distance measured by ultrasonic) and item (item is used to store randomly generated values). The initial value of item is 5, and the servo angle is set to 110 degrees, the RGB dot matrix displays a green smiley face.
 
 ![image-20240409131930068](./media/image-20240409131930068.png)
 
-2.在`forever`中添加将超声波测量的距离赋值给distance变量，然后进行打印使用串口打印模块不换行打印字符进行区分，然后打样数据换行这样就能将字符与数值打印到一行中，颜色0.2s
+2.Add the distance measured by ultrasonic to the distance variable in `forever`. Use the serial port printing module to print characters no-wrap for distinction, and then wrap the proofing data so that characters and values can be printed on one line. The delay is 0.2s.
 
 ![image-20240409133354446](./media/image-20240409133354446.png)
 
-3.使用判断模块对distance与item里面的值进行对比如果distance里面的值小于item里面的值则执行判断模块里面的代码。使用随机生成数值模块并设置成随机生成3-9之间的数这样就可以到达鳄鱼咬手的随机性的效果，time初始值是5下一次的值是随机生成。添加RGB点阵显示红色哭脸代码，然后添加舵机选择角度为55度的代码这样鳄鱼就咬合了，延时3秒钟后舵机旋转到110度鳄鱼张嘴，然后RGB点阵显示绿色微笑，在延时1.5s。
+3.Use the if then module to compare the values in distance and item. If the value in distance is less than the value in item, the code in the if then module will be executed. Use the randomly generated value module and set it to randomly generate a number between 3-9 so that you can achieve the random effect of hand biting crocodile. The initial value of time is 5 and the next value is randomly generated. 
+
+Add the RGB dot matrix to display the red crying face code, and then add the code for the servo to select an angle of 55 degrees so that the crocodile bites. After a delay of 3s, the servo rotates to 110 degrees and the crocodile opens its mouth, and then the RGB dot matrix displays a green smile. The delay is 1.5s.
 
 ![image-20240409133945088](./media/image-20240409133945088.png)
 
-**完整代码：**
+**Complete Code：**
 
 ![4-Crocodile_Bite_Code](./media/4-Crocodile_Bite_Code.png)
 
-### 4.3代码结果
+### 4.3 Test Result
 
-上传代码成功后鳄鱼张嘴，RGB点阵显示绿色微笑，手往鳄鱼嘴里申当手离超声波的距离满足鳄鱼咬合条件时，鳄鱼咬合RGB点阵显示红色哭脸，咬合3秒钟后鳄鱼松嘴并且RGB点阵显示绿色笑脸，最后的1.5秒延时是为了可以将手从鳄鱼嘴里缩回来准备的。1.5s过后进入下一个咬手过程。
-
-
+After the code is successfully uploaded, the crocodile opens its mouth, and the RGB dot matrix displays a green smile. When the distance between the hand and the ultrasonic meets the crocodile's bite conditions, the crocodile bites and the RGB dot matrix displays a red crying face. The crocodile releases its mouth after 3s of bite. And the RGB dot matrix displays a green smiley face, the final 1.5s delay is to prepare for retracting the hand from the crocodile's mouth. After 1.5s, it enters the next hand-biting process.
 
