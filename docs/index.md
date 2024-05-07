@@ -101,7 +101,7 @@ The basic tutorial includes an introduction to the development board, how to use
 
 <p style="font-size:25px;color:red;">Note：If you are a novice, learn the basic tutorial for the corresponding development board (Micro:bit / ESP32 Easy Coding Board) first, so that you will learn how to use programming software and upload code.</p>
 
-Micro:bit Development Board Basic Tutorial： [Micro:bit Basic Tutorial](Microbit/MicrobitBasicTutoria.md)
+Micro:bit Development Board Basic Tutorial： [Micro:bit Basic Tutorial](Microbit/MicrobitBasicTutorial.md)
 
 ESP32 Easy Coding Board Basic Tutorial：[ESP32 Easy Coding Board Basic Tutorial](ESP32/ESP32EasyCodingBoardBasicTutorial.md)
 
