@@ -45,11 +45,11 @@ If you are interested in our products, please contact to our sales representativ
 
 # STEM Programming DIY Crocodile Learning Kit
 
-![](./media/z1.jpg)
+![](./media/A1.png)
 
 ## 1.Mind Mapping
 
-![11](./media/11.png)
+![11](./media/A2.png)
 
 ------
 
@@ -57,20 +57,20 @@ If you are interested in our products, please contact to our sales representativ
 
 |  #   |                           Picture                            |         Component         | QTY  |
 | :--: | :----------------------------------------------------------: | :-----------------------: | :--: |
-|  1   |                    ![img](./media/z2.png)                    |      Basswood Board       |  1   |
-|  2   |                   ![img](./media/wps3.jpg)                   |      Expansion Board      |  1   |
-|  3   |                   ![img](./media/wps1.jpg)                   |           Servo           |  1   |
-|  4   |                   ![img](./media/wps4.jpg)                   |      Battery Holder       |  1   |
-|  5   |       ![img](./media/wps6.jpg)![img](./media/wps6.jpg)       |          M4 Nut           |  4   |
-|  6   | ![img](./media/wps5.jpg)![img](./media/wps5.jpg)![img](./media/wps5.jpg)![img](./media/wps5.jpg) |       M4*8mm Screw       |  4   |
-|  7   |       ![img](./media/wps7.jpg)![img](./media/wps7.jpg)       | M2.5*8MM Flat Head Screw  |  2   |
-|  8   |       ![img](./media/wps8.jpg)![img](./media/wps8.jpg)       |         M2.5 Nut          |  2   |
-|  9   |       ![img](./media/wps9.jpg)![img](./media/wps9.jpg)![img](./media/wps9.jpg)![img](./media/wps9.jpg)       | M1.4*8MM Round Head Screw |  4  |
-|   10   | ![img](./media/wps10.jpg)![img](./media/wps10.jpg)![img](./media/wps10.jpg)![img](./media/wps10.jpg) |               M1.4  Nut               |   4    |
-|    11  | ![img](./media/wps11.jpg)![img](./media/wps11.jpg)![img](./media/wps11.jpg)![img](./media/wps11.jpg) | M1.2*5MM Round Head Self-tapping Screw |   4    |
-|   12   |      ![img](./media/wps12.jpg)![img](./media/wps12.jpg)      |           M2*12MM Round Head Screw           |   2    |
-|   13   |      ![img](./media/wps13.jpg)![img](./media/wps13.jpg)      |                M2  Nut                |   2    |
-|  14  |                   ![img](./media/q10.png)                    |        Screwdriver        |  1   |
+|  1   |                    ![img](./media/A3.png)                    |      Basswood Board       |  1   |
+|  2   |                   ![img](./media/A4.png)                   |      Expansion Board      |  1   |
+|  3   |                   ![img](./media/A5.png)                   |           Servo           |  1   |
+|  4   |                   ![img](./media/A6.png)                   |      Battery Holder       |  1   |
+|  5   |       ![img](./media/A7.png)![img](./media/A7.png)       |          M4 Nut           |  4   |
+|  6   | ![img](./media/A8.PNG)![img](./media/A8.PNG)![img](./media/A8.PNG)![img](./media/A8.PNG) |       M4*8mm Screw       |  4   |
+|  7   |       ![img](./media/A9.png)![img](./media/A9.png)       | M2.5*8MM Flat Head Screw  |  2   |
+|  8   |       ![img](./media/A10.png)![img](./media/A10.png)       |         M2.5 Nut          |  2   |
+|  9   |       ![img](./media/A11.png)![img](./media/A11.png)![img](./media/A11.png)![img](./media/A11.png)       | M1.4*8MM Round Head Screw |  4  |
+|   10   | ![img](./media/A12.png)![img](./media/A12.png)![img](./media/A12.png)![img](./media/A12.png) |               M1.4  Nut               |   4    |
+|    11  | ![img](./media/A13.png)![img](./media/A13.png)![img](./media/A13.png)![img](./media/A13.png) | M1.2*5MM Round Head Self-tapping Screw |   4    |
+|   12   |      ![img](./media/A14.png)![img](./media/A14.png)      |           M2*12MM Round Head Screw           |   2    |
+|   13   |      ![img](./media/A15.png)![img](./media/A15.png)      |                M2  Nut                |   2    |
+|  14  |                   ![img](./media/A16.png)                    |        Screwdriver        |  1   |
 
 ------
 

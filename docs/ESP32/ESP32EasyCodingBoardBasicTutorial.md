@@ -16,26 +16,26 @@ Link：<http://keyestudio-ks5018.readthedocs.io/>
 
      
 
-2. After downloading, click  “KidsBlock.exe”![img](./media/an1-1712639258554-18.png)to open it.
+2. After downloading, click  “KidsBlock.exe”![img](./media/E1.png)to open it.
 
 3. Tap “**Anyone who uses this computer(all users)**” and “**Next**”.
 
-![](./media/an2-1712639112358-1-1712639258554-19.png)
+![](./media/E2.png)
 
 4. Click “**Browse…**” to choose an installation path of the software, and click “**Install**”.
 
 
-![img](./media/an3-1712639258554-20.png)
+![img](./media/E3.png)
 
-![img](./media/an4-1712639258554-21.png)
+![img](./media/E4.png)
 
 5. Click “Finish”.
 
-![img](./media/an5-1712639258554-22.png)
+![img](./media/E5.png)
 
 6. If there is a warning on your computer, just click “**Allow access**” to enter the software.
 
-![img](./media/an6-1712639123997-3-1712639258554-23.png)
+![img](./media/E6.png)
 
 ------
 
@@ -45,35 +45,35 @@ Link：<http://keyestudio-ks5018.readthedocs.io/>
 
 1. Download Kidsblock package： [http://xiazai.keyesrobot.cn/KidsBlock.dmg](http://xiazai.keyesrobot.cn/KidsBlock.dmg)
 
-![img](./media/an7-1712639258554-24.png)
+![img](./media/E7.png)
 
 2. After downloading, click **KidsBlock**. And then drag the **KidsBlock Desktop** into **Applications**.
 
-![img](./media/an8-1712639258554-25.png)
+![img](./media/E8.png)
 
 3. After installation, you can see the icon of KidsBlock.
 
-   ![img](./media/an9-1712639138551-5-1712639258554-26.png)
+   ![img](./media/E9.png)
 
 4. Open KidsBlock, but it cannot be opened, because Mac devices only allow us to open apps from its App store by default. Thus, we  need to modify some settings. 
 
-   ![img](./media/an9-1-1712639148510-7-1712639258554-27.png)
+   ![img](./media/E10.png)
 
 5. Open settings and enter **Privacy&Security**, tick **App Store and identified developers** in **Security**. And then click **Open Anyway**.
 
-   ![img](./media/an9-2-1712639151503-9-1712639258554-28.png)
+   ![img](./media/E11.png)
 
 6. Click **Open** and the software can be opened.
 
-   ![img](./media/an9-3-1712639154395-11-1712639258554-29.png)
+   ![img](./media/E12.png)
 
 7. Now re-open the Kidsblock.
 
-   ![img](./media/an9-4-1712639157086-13-1712639258554-30.png)
+   ![img](./media/E13.png)
 
 8. Now enjoy your programming!
 
-   ![img](./media/an9-5-1712639160901-15-1712639258554-31.png)
+   ![img](./media/E14.png)
 
 ------
 
@@ -85,7 +85,7 @@ Link：<http://keyestudio-ks5018.readthedocs.io/>
 
 #### kidsblock Main Interface 1：
 
-![img](./media/an10-1712639258554-32.png)
+![img](./media/E15.png)
 
 ------
 
@@ -93,9 +93,9 @@ Link：<http://keyestudio-ks5018.readthedocs.io/>
 
 #### Language
 
-Click![img](./media/an11-1712639258555-33.png)to shift languages.
+Click![img](./media/E16.png)to shift languages.
 
-![image-20240409130921782](./media/image-20240409130921782.png)
+![image-20240409130921782](./media/E17.png)
 
 ------
 
@@ -105,58 +105,58 @@ Click![img](./media/an11-1712639258555-33.png)to shift languages.
 
 **If the driver is already installed on the computer, you do not need to install it again. If not, you need to do the following.**
 
-Click![img](./media/an13-1712639258555-35.png)to choose “**Install driver**”.
+Click![img](./media/E18.png)to choose “**Install driver**”.
 
 
-![img](./media/an14-1712639258555-36.png)
+![img](./media/E19.png)
 
 - Enter **Device Driver Installation Wizard** and click “**Next**”.
 
-![img](./media/an15-1712639258555-37.png)
+![img](./media/E20.png)
 
 - Click “**Finish**”.
 
-![img](./media/an16-1712639258555-38.png)
+![img](./media/E21.png)
 
 - Click “**Next**”.
 
-![img](./media/an17-1712639258555-39.png)
+![img](./media/E22.png)
 
 - Click “**Finish**”.
 
-![img](./media/an18-1712639258555-40.png)
+![img](./media/E23.png)
 
 - If a warning appears, just click “**Allow**” and “**Install**”.
 
-![img](./media/an19-1712639258555-41.png)
+![img](./media/E24.png)
 
 - Click “**Finish**”.
 
-![img](./media/an20-1712639258555-42.png)
+![img](./media/E25.png)
 
 - Click “**Extract**”.
 
-![img](./media/an21-1712639258555-43.png)
+![img](./media/E26.png)
 
 - Click “**Next**”.
 
-![img](./media/an22-1712639258555-44.png)
+![img](./media/E27.png)
 
 - Click “**I accept this agreement**” and “**Next**”.
 
-![img](./media/an23-1712639258555-45.png)
+![img](./media/E28.png)
 
 - Click “**Finish**”.
 
-![img](./media/an24-1712639258555-46.png)
+![img](./media/E29.png)
 
 - Click “**INSTALL**”.
 
-![img](./media/an25-1712639258555-47.png)
+![img](./media/E30.png)
 
 - Click “**OK**”.
 
-![img](./media/an26-1712639258555-48.png)
+![img](./media/E31.png)
 
 ------
 
@@ -164,39 +164,39 @@ Click![img](./media/an13-1712639258555-35.png)to choose “**Install driver**”
 
 ##### Connect a board and a port:
 
-- Click![img](./media/an27-1712639258555-49.png)to choose a device.
+- Click![img](./media/E32.png)to choose a device.
 
 - Click **Kit** and find **ESP32 Easy Coding Board** to load it. Required sensors and modules are included in it, so you do not need to load them one by one.
 
-  ![img](./media/an28-1712639258555-50.png)
+  ![img](./media/E33.png)
 
 - The following interface will appear, and we need to choose the correct port and click **Connect**.
 
-  ![img](./media/an29-1712639258555-51.png)
+  ![img](./media/E34.png)
 
 - Click **Go to Editor**
 
-  ![img](./media/an30-1712639258555-52.png)
+  ![img](./media/E35.png)
 
 - Main interface:
 
-  ![img](./media/an31-1712639258555-53.png)
+  ![img](./media/E36.png)
 
 ------
 
 ##### Disconnect
 
-- To disconnect the port，tap![img](./media/an32-1712639258555-54.png)first.
+- To disconnect the port，tap![img](./media/E37.png)first.
 
 - Then tap **Disconnect**.
 
-  ![img](./media/an33-1712639258555-55.png)
+  ![img](./media/E38.png)
 
 ------
 
 #### kidsblock Main Interface 2：
 
-![img](./media/an34-1712639258555-56.png)
+![img](./media/E39.png)
 
 ------
 
@@ -204,29 +204,29 @@ Click![img](./media/an13-1712639258555-35.png)to choose “**Install driver**”
 
 **This kit has integrated required sensors and modules. If you want to add them that are not available in the kit, please refer to these steps.**
 
-- Click![img](./media/an35-1712639083027-1-1712639258555-57.png)to choose an extension:
+- Click![img](./media/E40.png)to choose an extension:
 
-  ![img](./media/an36-1712639258555-58.png)
+  ![img](./media/E41.png)
 
 - For instance, if you want to load a passive buzzer, click it:
 
-  ![img](./media/an37-1712639258555-59.png)
+  ![img](./media/E42.png)
 
 - “When “**Not loaded**” becomes “**Loaded**”, the buzzer module is successfully imported.
 
-  ![img](./media/an38-1712639258555-60.png)
+  ![img](./media/E43.png)
 
-- Click![img](./media/an39-1712639258555-61.png)and you can see a passive buzzer in the blocks:
+- Click![img](./media/E44.png)and you can see a passive buzzer in the blocks:
 
-  ![img](./media/an41-1712639258555-62.png)
+  ![img](./media/E45.png)
 
-- To delete the passive buzzer, click![img](./media/an42-1712639258555-63.png)to select it.
+- To delete the passive buzzer, click![img](./media/E46.png)to select it.
 
-  ![img](./media/an38-1712639258555-60.png)
+  ![img](./media/E52.png)
 
   When “Loaded” changes into “Not loaded”, the module is removed from blocks.
 
-  ![img](./media/an37-1712639258555-59.png)
+  ![img](./media/E53.png)
 
   
 
@@ -237,21 +237,21 @@ Click![img](./media/an13-1712639258555-35.png)to choose “**Install driver**”
 
 1. Method 1：
 
-   - Click SB3 file to open it. If you want to open ![](./media/an46-1712639258555-64.png), just double click it. After that, please connect the board and port.
+   - Click SB3 file to open it. If you want to open ![](./media/E47.png), just double click it. After that, please connect the board and port.
 
-     ![img](./media/an54-1712639258555-65.png)
+     ![img](./media/E48.png)
 
 2. Method 2：
 
    - Open Kidsblock and click “**file**” to choose “**Load from your computer**”.
 
-     ![img](./media/an47-1712639258555-66.png)	
+     ![img](./media/E49.png)	
 
-   - Find and open the SB3 file, like ![img](./media/an46-1712639258531-17.png).
+   - Find and open the SB3 file, like ![img](./media/E50.png).
 
-     ![img](./media/an50-1712639258555-67.png)
+     ![img](./media/E51.png)
 
-     ![img](./media/an54-1712639258555-65.png)
+     ![](./media/E54.png)
 
 ------
 
@@ -261,32 +261,32 @@ Click![img](./media/an13-1712639258555-35.png)to choose “**Install driver**”
 
 - Load code file to Kidsblock.
 
-  ![img](./media/an47-1712639258555-66.png)
+  ![img](./media/E55.png)
 
-- Connect the board to your computer. If there is no port, please install driver first. Choose the correct board and port and click![img](./media/an52-1712639258556-68.png).
+- Connect the board to your computer. If there is no port, please install driver first. Choose the correct board and port and click![img](./media/E56.png).
 
-  ![img](./media/an54-1712639258555-65.png)
+  ![img](./media/E57.png)
 
 - Wait for uploading.
 
-  ![img](./media/an53-1712639258556-69.png)
+  ![img](./media/E58.png)
 
 ------
 
 ##### Set Baud Rate
 
-- Click one of ![img](./media/an56-1712639258556-70.png) to set the size of print box.
-  - Small ![img](./media/an58-1712639258556-71.png)
-  - Large ![img](./media/an59-1712639258556-72.png)
-  - None ![img](./media/an60-1712639258556-73.png)
+- Click one of ![img](./media/E59.png) to set the size of print box.
+  - Small ![img](./media/E60.png)
+  - Large ![img](./media/E61.png)
+  - None ![img](./media/E62.png)
 
-- After opening print box, click ![img](./media/an57-1712639258556-74.png)to set baud rate.
+- After opening print box, click ![img](./media/E63.png)to set baud rate.
 
-![img](./media/an55-1712639258556-77.png)
+![img](./media/E64.png)
 
 After setting the baud rate and uploading the code, “**Hello KidsBlock**” will be printed on the box.
 
-![img](./media/an62-1712639258556-75.png)
+![img](./media/E65.png)
 
 ------
 
