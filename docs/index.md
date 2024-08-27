@@ -386,7 +386,7 @@ In the crocodile tutorial, you will learn how to drive the servo according to th
 
 Link for Micro:bit Development Board Crocodile Tutorial：[Biting Crocodile Micro:bit Tutorial](Microbit/MicrobitBitingCrocodileTutorial.md)
 
-Link for ESP32 Easy Coding Board Tutorial：[Biting Crocodile ESP32 Easy Coding Board Tutorial](ESP32/ESP32EasyCodingBoardBitingCrocodileTutorial.md)
+<!--Link for ESP32 Easy Coding Board Tutorial：[Biting Crocodile ESP32 Easy Coding Board Tutorial](ESP32/ESP32EasyCodingBoardBitingCrocodileTutorial.md)-->
 
 ------
 
