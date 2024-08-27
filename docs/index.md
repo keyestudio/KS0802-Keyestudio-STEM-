@@ -103,7 +103,7 @@ The basic tutorial includes an introduction to the development board, how to use
 
 Micro:bit Development Board Basic Tutorial： [Micro:bit Basic Tutorial](Microbit/MicrobitBasicTutorial.md)
 
-ESP32 Easy Coding Board Basic Tutorial：[ESP32 Easy Coding Board Basic Tutorial](ESP32/ESP32EasyCodingBoardBasicTutorial.md)
+<!--ESP32 Easy Coding Board Basic Tutorial：[ESP32 Easy Coding Board Basic Tutorial](ESP32/ESP32EasyCodingBoardBasicTutorial.md)-->
 
 ------
 
