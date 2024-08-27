@@ -265,7 +265,7 @@ Required components
 
 **Code：**
 
-Link for setting the servo to 90 degrees of ESP32 Easy Coding Board：[Tap it to download the code](code/ESP32EasyCodingBoardBiting/SetTheServoTo90Degrees.sb3)
+<!--Link for setting the servo to 90 degrees of ESP32 Easy Coding Board：[Tap it to download the code](code/ESP32EasyCodingBoardBiting/SetTheServoTo90Degrees.sb3)-->
 
 After the code is uploaded successfully, the servo will first rotate to 0 degrees and then rotate to 90 degrees.
 
